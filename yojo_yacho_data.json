@@ -1,0 +1,584 @@
+{
+  "meta": {
+    "appName": "養生野帳",
+    "appNameReading": "ようじょうやちょう",
+    "dataVersion": "1.0",
+    "createdDate": "2026-06-09",
+    "dataSource": "サプリメント・栄養素一覧.md（2026-06-02作成）",
+    "note": "SUNSTYLEのビタミンB群は総摂取量からの逆算による概算値"
+  },
+
+  "products": [
+    {
+      "id": "dhc-b-mix",
+      "name": "DHC ビタミンBミックス",
+      "category": "supplement",
+      "dailyDose": "2粒（朝食後）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "vitamin-b1", "amount": 40, "unit": "mg" },
+        { "nutrientId": "vitamin-b2", "amount": 30, "unit": "mg" },
+        { "nutrientId": "vitamin-b6", "amount": 30, "unit": "mg" },
+        { "nutrientId": "vitamin-b12", "amount": 20, "unit": "μg" },
+        { "nutrientId": "niacin", "amount": 40, "unit": "mg" },
+        { "nutrientId": "pantothenic-acid", "amount": 40, "unit": "mg" },
+        { "nutrientId": "biotin", "amount": 50, "unit": "μg" },
+        { "nutrientId": "folic-acid", "amount": 200, "unit": "μg" },
+        { "nutrientId": "inositol", "amount": 50, "unit": "mg" }
+      ],
+      "comment": "B群の主力供給源。水溶性ビタミンであるから、過剰分は排出される。毎朝の服用を怠らぬこと。"
+    },
+    {
+      "id": "dhc-multi-mineral",
+      "name": "DHC マルチミネラル",
+      "category": "supplement",
+      "dailyDose": "3粒（夕食後）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "calcium", "amount": 250, "unit": "mg" },
+        { "nutrientId": "magnesium", "amount": 125, "unit": "mg" },
+        { "nutrientId": "iron", "amount": 7.5, "unit": "mg" },
+        { "nutrientId": "zinc", "amount": 6.0, "unit": "mg" },
+        { "nutrientId": "copper", "amount": 0.6, "unit": "mg" },
+        { "nutrientId": "manganese", "amount": 1.5, "unit": "mg" }
+      ],
+      "comment": "亜鉛・銅・鉄のバランスが整っている。単体サプリで崩すより、このまま維持するのが賢明。"
+    },
+    {
+      "id": "dear-natura-dha",
+      "name": "ディアナチュラ DHA+イチョウ葉",
+      "category": "supplement",
+      "dailyDose": "4粒（夕食後）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "dha", "amount": 500, "unit": "mg" },
+        { "nutrientId": "epa", "amount": 65, "unit": "mg" }
+      ],
+      "comment": "DHA・EPAは脳機能と抗炎症に寄与する。イチョウ葉エキス末12mgも含む。"
+    },
+    {
+      "id": "hythiol",
+      "name": "ハイチオールCプラスEX",
+      "category": "supplement",
+      "dailyDose": "2錠×2回（朝食後・夕食後）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "l-cysteine", "amount": 240, "unit": "mg" },
+        { "nutrientId": "vitamin-c", "amount": 500, "unit": "mg" },
+        { "nutrientId": "pantothenic-acid", "amount": 30, "unit": "mg" }
+      ],
+      "comment": "しみ対策に加え、L-システインは髪のケラチン原料でもある。2026年6月に再開。二つの目的を一度に担う。"
+    },
+    {
+      "id": "sunstyle",
+      "name": "SUNSTYLE PREMIUMソイプロテイン",
+      "category": "protein",
+      "dailyDose": "21g×2回（昼食＋運動後）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 35, "unit": "g", "note": "17.5g/回×2" },
+        { "nutrientId": "vitamin-c", "amount": 198, "unit": "mg", "note": "99mg/回×2" },
+        { "nutrientId": "vitamin-d", "amount": 8.6, "unit": "μg", "note": "4.3μg/回×2" },
+        { "nutrientId": "vitamin-e", "amount": 9.0, "unit": "mg", "note": "4.5mg/回×2" },
+        { "nutrientId": "vitamin-a", "amount": 1020, "unit": "μg", "note": "510μg/回×2" },
+        { "nutrientId": "vitamin-b1", "amount": 1.0, "unit": "mg", "note": "概算" },
+        { "nutrientId": "vitamin-b2", "amount": 1.4, "unit": "mg", "note": "概算" },
+        { "nutrientId": "vitamin-b6", "amount": 1.0, "unit": "mg", "note": "概算" },
+        { "nutrientId": "vitamin-b12", "amount": 2.2, "unit": "μg", "note": "概算" },
+        { "nutrientId": "niacin", "amount": 18.0, "unit": "mg", "note": "概算" },
+        { "nutrientId": "folic-acid", "amount": 180, "unit": "μg", "note": "概算" },
+        { "nutrientId": "pantothenic-acid", "amount": 4.6, "unit": "mg", "note": "概算" }
+      ],
+      "comment": "栄養バランスの要。1日2回の運用でビタミンDが推奨量に到達する。1回に減った日は、ビタミンDが不足に転落する。注意せよ。"
+    },
+    {
+      "id": "cocoa",
+      "name": "純ココアパウダー（森永）",
+      "category": "protein",
+      "dailyDose": "約5g（昼食プロテインに混合）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "iron", "amount": 0.7, "unit": "mg" }
+      ],
+      "comment": "味の調整役だが、鉄0.7mgと食物繊維も寄与している。テオブロミンによる穏やかな覚醒作用もある。"
+    },
+    {
+      "id": "skim-milk",
+      "name": "北海道脱脂粉乳（スキムミルク）",
+      "category": "protein",
+      "dailyDose": "約15g（昼食プロテインに混合）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 5.3, "unit": "g" },
+        { "nutrientId": "calcium", "amount": 80, "unit": "mg", "note": "概算" }
+      ],
+      "comment": "昼のプロテインドリンクのベース。たんぱく質とカルシウムを静かに積んでいる。"
+    },
+    {
+      "id": "boiled-egg",
+      "name": "ゆで卵",
+      "category": "food",
+      "dailyDose": "1個（朝食）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 6.5, "unit": "g" },
+        { "nutrientId": "iron", "amount": 1.0, "unit": "mg" },
+        { "nutrientId": "zinc", "amount": 0.8, "unit": "mg" },
+        { "nutrientId": "vitamin-d", "amount": 1.8, "unit": "μg" }
+      ],
+      "comment": "朝食の定番。たんぱく質、鉄、亜鉛、ビタミンDを一個でまかなう、堅実な一品。"
+    },
+    {
+      "id": "natto",
+      "name": "納豆",
+      "category": "food",
+      "dailyDose": "1パック40g（夕食）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 6.5, "unit": "g" },
+        { "nutrientId": "iron", "amount": 1.5, "unit": "mg" },
+        { "nutrientId": "zinc", "amount": 0.9, "unit": "mg" }
+      ],
+      "comment": "たんぱく質、鉄、亜鉛、ビタミンK、食物繊維。小さな一パックに多くを背負っている、働き者である。"
+    },
+    {
+      "id": "whole-wheat-bread",
+      "name": "全粒粉入り食パン",
+      "category": "food",
+      "dailyDose": "朝食",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "iron", "amount": 0.5, "unit": "mg" }
+      ],
+      "comment": "鉄と不溶性食物繊維の地味な供給源。朝食の土台。"
+    },
+    {
+      "id": "cheese",
+      "name": "スライスチーズ",
+      "category": "food",
+      "dailyDose": "1枚（朝食）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 3.5, "unit": "g", "note": "概算" },
+        { "nutrientId": "calcium", "amount": 100, "unit": "mg", "note": "概算" }
+      ],
+      "comment": "カルシウムとたんぱく質の補助。朝食のパンに載せるだけで仕事をしている。"
+    },
+    {
+      "id": "almond",
+      "name": "アーモンド",
+      "category": "food",
+      "dailyDose": "間食",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "vitamin-e", "amount": 4.0, "unit": "mg", "note": "概算" },
+        { "nutrientId": "magnesium", "amount": 40, "unit": "mg", "note": "概算" }
+      ],
+      "comment": "ビタミンE、マグネシウム、食物繊維。間食としては理想的な組み合わせ。"
+    }
+  ],
+
+  "nutrients": [
+    {
+      "id": "vitamin-b1",
+      "name": "ビタミンB1",
+      "rda": 1.1,
+      "unit": "mg",
+      "currentIntake": 41.1,
+      "status": "sufficient",
+      "purpose": "糖質の代謝に必須。エネルギー産生、神経機能の維持",
+      "notes": null,
+      "comment": "DHCビタミンBミックスが主力。大幅に充足しているが、水溶性のため過剰の心配はない。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 40 },
+        { "productId": "sunstyle", "amount": 1.0 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "vitamin-b2",
+      "name": "ビタミンB2",
+      "rda": 1.2,
+      "unit": "mg",
+      "currentIntake": 31.6,
+      "status": "sufficient",
+      "purpose": "脂質の代謝、皮膚・粘膜の健康維持",
+      "notes": null,
+      "comment": "十分。皮膚のターンオーバーにも関与しており、L-システインとの相乗効果がある。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 30 },
+        { "productId": "sunstyle", "amount": 1.4 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "vitamin-b6",
+      "name": "ビタミンB6",
+      "rda": 1.1,
+      "unit": "mg",
+      "currentIntake": 31.2,
+      "status": "sufficient",
+      "purpose": "たんぱく質の代謝、神経伝達物質の合成",
+      "notes": null,
+      "comment": "十分。たんぱく質摂取量が多いほど需要が増えるが、現在の摂取量なら問題ない。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 30 },
+        { "productId": "sunstyle", "amount": 1.0 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "vitamin-b12",
+      "name": "ビタミンB12",
+      "rda": 2.4,
+      "unit": "μg",
+      "currentIntake": 22.7,
+      "status": "sufficient",
+      "purpose": "赤血球の形成、神経機能の維持、葉酸との協働",
+      "notes": null,
+      "comment": "十分。動物性食品に多い栄養素だが、サプリで十分量を確保している。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 20 },
+        { "productId": "sunstyle", "amount": 2.2 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "vitamin-c",
+      "name": "ビタミンC",
+      "rda": 100,
+      "unit": "mg",
+      "currentIntake": 700,
+      "status": "sufficient",
+      "purpose": "鉄の吸収促進、コラーゲン合成、抗酸化",
+      "notes": null,
+      "comment": "ハイチオール500mg＋SUNSTYLE198mgで大幅に充足。鉄の吸収を助ける重要な役割を担っている。",
+      "sources": [
+        { "productId": "hythiol", "amount": 500 },
+        { "productId": "sunstyle", "amount": 198 }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "vitamin-d",
+      "name": "ビタミンD",
+      "rda": 8.5,
+      "unit": "μg",
+      "currentIntake": 10.4,
+      "status": "adequate",
+      "purpose": "毛包の成長サイクルに関与、カルシウム吸収の促進、免疫機能",
+      "notes": "SUNSTYLEを1回に減らした場合、4.3μg＋ゆで卵1.8μg＝6.1μgとなり不足に転落する。要注意。血液検査（25-OH）未実施。",
+      "comment": "SUNSTYLE2回の運用が生命線。1回の日は意識して日光を浴びるか、他の供給源を検討せよ。",
+      "sources": [
+        { "productId": "sunstyle", "amount": 8.6 },
+        { "productId": "boiled-egg", "amount": 1.8 }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "folic-acid",
+      "name": "葉酸",
+      "rda": 240,
+      "unit": "μg",
+      "currentIntake": 391,
+      "status": "sufficient",
+      "purpose": "細胞分裂・DNA合成に必須。赤血球の形成",
+      "notes": null,
+      "comment": "十分。DHCビタミンBミックスとSUNSTYLEの合算で推奨量を大きく超えている。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 200 },
+        { "productId": "sunstyle", "amount": 180 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "biotin",
+      "name": "ビオチン",
+      "rda": 50,
+      "unit": "μg",
+      "currentIntake": 50,
+      "status": "adequate",
+      "purpose": "毛髪・皮膚・爪の健康維持、糖質・脂質・たんぱく質の代謝",
+      "notes": null,
+      "comment": "推奨量ちょうど。余裕がないが、腸内細菌も一部合成するため、実質的には問題ない。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 50 }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "pantothenic-acid",
+      "name": "パントテン酸",
+      "rda": 5,
+      "unit": "mg",
+      "currentIntake": 74.6,
+      "status": "sufficient",
+      "purpose": "エネルギー代謝、ホルモン合成、皮膚・粘膜の健康",
+      "notes": "過剰気味だが水溶性のため排出される。問題なし。",
+      "comment": "三つの供給源（DHC 40mg＋ハイチオール30mg＋SUNSTYLE 4.6mg）が重なり、推奨量の約15倍。害はない。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 40 },
+        { "productId": "hythiol", "amount": 30 },
+        { "productId": "sunstyle", "amount": 4.6 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "niacin",
+      "name": "ナイアシン",
+      "rda": 11,
+      "unit": "mg",
+      "currentIntake": 59,
+      "status": "sufficient",
+      "purpose": "エネルギー代謝、皮膚の健康、神経機能",
+      "notes": null,
+      "comment": "十分。DHCビタミンBミックスが主力。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 40 },
+        { "productId": "sunstyle", "amount": 18 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "iron",
+      "name": "鉄",
+      "rda": 10.5,
+      "unit": "mg",
+      "currentIntake": 11.2,
+      "status": "adequate",
+      "purpose": "毛母細胞への酸素供給、赤血球の形成、貧血予防",
+      "notes": "ビタミンC（500mg摂取中）が非ヘム鉄の吸収を促進。フェリチン検査未実施──貯蔵量の実態は不明。",
+      "comment": "数値上は推奨量に到達しているが、吸収率と消費量には個人差がある。血液検査で確認するのが理想。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 7.5 },
+        { "productId": "natto", "amount": 1.5 },
+        { "productId": "boiled-egg", "amount": 1.0 },
+        { "productId": "cocoa", "amount": 0.7 },
+        { "productId": "whole-wheat-bread", "amount": 0.5 }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "zinc",
+      "name": "亜鉛",
+      "rda": 8,
+      "unit": "mg",
+      "currentIntake": 7.7,
+      "status": "adequate",
+      "purpose": "ケラチン合成に直接関与、免疫機能、味覚の維持",
+      "notes": "亜鉛を単体で追加すると銅の吸収を阻害する。マルチミネラルに銅0.6mgが含まれており、現状のバランスを崩さない方がよい。血液検査未実施。",
+      "comment": "食事込みでほぼ推奨量に到達。銅とのバランスが重要であるため、安易に追加しないこと。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 6.0 },
+        { "productId": "natto", "amount": 0.9 },
+        { "productId": "boiled-egg", "amount": 0.8 }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "l-cysteine",
+      "name": "L-システイン",
+      "rda": null,
+      "unit": "mg",
+      "currentIntake": 240,
+      "status": "supplemented",
+      "purpose": "ケラチンの原料、肌のターンオーバー促進、メラニン排出",
+      "notes": "必須アミノ酸ではないが、髪と肌の修復に重要。標準的な推奨量は設定されていない。",
+      "comment": "ハイチオールCプラスEXで240mg。しみ対策と髪の回復を同時に担う、今の布陣の要。",
+      "sources": [
+        { "productId": "hythiol", "amount": 240 }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "dha",
+      "name": "DHA",
+      "rda": null,
+      "unit": "mg",
+      "currentIntake": 500,
+      "status": "supplemented",
+      "purpose": "脳機能の維持、抗炎症作用、血中脂質の改善",
+      "notes": "DHA＋EPAの合計で1日1000mg以上が目安とされることもあるが、明確な推奨量はない。",
+      "comment": "ディアナチュラで500mg。EPAと合わせて565mg。魚をあまり食べない食生活を補っている。",
+      "sources": [
+        { "productId": "dear-natura-dha", "amount": 500 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "epa",
+      "name": "EPA",
+      "rda": null,
+      "unit": "mg",
+      "currentIntake": 65,
+      "status": "supplemented",
+      "purpose": "抗炎症作用、血液凝固の抑制、血中中性脂肪の低下",
+      "notes": null,
+      "comment": "DHAの陰に隠れがちだが、炎症を抑える力はEPAの方が強い。65mgは少なめだが、DHAと合わせて機能する。",
+      "sources": [
+        { "productId": "dear-natura-dha", "amount": 65 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "protein",
+      "name": "たんぱく質",
+      "rda": 50,
+      "unit": "g",
+      "currentIntake": 83,
+      "status": "sufficient",
+      "purpose": "髪の主成分ケラチンの原料、筋肉の維持・修復、全身の組織構成",
+      "notes": "朝食23g＋昼食（SUNSTYLE17.5g＋スキムミルク5.3g）＋運動後（SUNSTYLE17.5g＋牛乳7g）＋夕食（納豆6.5g＋その他）で確保。",
+      "comment": "一日を通して分散摂取できている。筋トレ後のゴールデンタイムにも確実に入れている。現在の布陣で十分。",
+      "sources": [
+        { "productId": "sunstyle", "amount": 35 },
+        { "productId": "boiled-egg", "amount": 6.5 },
+        { "productId": "natto", "amount": 6.5 },
+        { "productId": "skim-milk", "amount": 5.3 },
+        { "productId": "cheese", "amount": 3.5 }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "calcium",
+      "name": "カルシウム",
+      "rda": 650,
+      "unit": "mg",
+      "currentIntake": 430,
+      "status": "caution",
+      "purpose": "骨・歯の形成、筋肉の収縮、神経伝達",
+      "notes": "推奨量650mgに対して不足気味。ただし牛乳（運動後プロテインに使用）やその他の食事からの摂取を含めると、もう少し上積みがある。",
+      "comment": "マルチミネラル250mg＋スキムミルク80mg＋チーズ100mgで430mg。夕食の豆腐や牛乳からの上積みを含めればおおむね到達するが、余裕は少ない。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 250 },
+        { "productId": "cheese", "amount": 100 },
+        { "productId": "skim-milk", "amount": 80 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "magnesium",
+      "name": "マグネシウム",
+      "rda": 270,
+      "unit": "mg",
+      "currentIntake": 165,
+      "status": "caution",
+      "purpose": "エネルギー代謝、筋肉の弛緩、神経の安定、骨の形成",
+      "notes": "推奨量に対して不足気味だが、食事全体からの摂取を含めるともう少し上積みがある。足のつりや筋肉の緊張が気になる場合は注意。",
+      "comment": "マルチミネラル125mg＋アーモンド40mgで165mg。納豆、全粒粉パン、その他の食事からの寄与を含めても、余裕のある栄養素ではない。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 125 },
+        { "productId": "almond", "amount": 40 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "vitamin-e",
+      "name": "ビタミンE",
+      "rda": 5.0,
+      "unit": "mg",
+      "currentIntake": 13.0,
+      "status": "sufficient",
+      "purpose": "抗酸化作用、血行促進、細胞膜の保護",
+      "notes": null,
+      "comment": "SUNSTYLE9mg＋アーモンド4mgで十分。抗酸化と血行促進──地味だが身体の修復を下支えしている。",
+      "sources": [
+        { "productId": "sunstyle", "amount": 9.0 },
+        { "productId": "almond", "amount": 4.0 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "copper",
+      "name": "銅",
+      "rda": 0.7,
+      "unit": "mg",
+      "currentIntake": 0.6,
+      "status": "caution",
+      "purpose": "鉄の利用促進、メラニン色素の合成、抗酸化酵素の構成成分",
+      "notes": "亜鉛との拮抗関係がある。亜鉛を単体で増やすと銅の吸収が阻害される。現在のマルチミネラルの配合バランスが重要。",
+      "comment": "マルチミネラルの0.6mgのみ。推奨量にわずかに足りないが、食事からの寄与を含めれば到達する。亜鉛との均衡を崩さぬことが肝要。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 0.6 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "inositol",
+      "name": "イノシトール",
+      "rda": null,
+      "unit": "mg",
+      "currentIntake": 50,
+      "status": "supplemented",
+      "purpose": "脂質代謝、細胞膜の構成、神経機能の補助",
+      "notes": "ビタミン様物質。推奨量は設定されていないが、B群と協働して代謝を支える。",
+      "comment": "DHCビタミンBミックスの付随成分。主役ではないが、B群の補佐として静かに働いている。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 50 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "vitamin-a",
+      "name": "ビタミンA",
+      "rda": 650,
+      "unit": "μg",
+      "currentIntake": 1020,
+      "status": "sufficient",
+      "purpose": "皮膚・粘膜の健康、視覚機能、免疫機能",
+      "notes": "脂溶性ビタミンのため過剰摂取に注意が必要だが、SUNSTYLEの量であれば耐容上限量（2700μg）の範囲内。",
+      "comment": "SUNSTYLEのみで推奨量を超えている。追加は不要。",
+      "sources": [
+        { "productId": "sunstyle", "amount": 1020 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "manganese",
+      "name": "マンガン",
+      "rda": 3.5,
+      "unit": "mg",
+      "currentIntake": 1.5,
+      "status": "caution",
+      "purpose": "骨の形成、糖質・脂質の代謝、抗酸化酵素の構成成分",
+      "notes": "マルチミネラルからの1.5mgのみだが、穀類や豆類からの食事摂取を含めればおおむね到達する。",
+      "comment": "食事からの寄与が大きい栄養素。サプリだけでは不足に見えるが、納豆、全粒粉パンなどから補われている。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 1.5 }
+      ],
+      "hairRelated": false
+    }
+  ],
+
+  "categories": {
+    "supplement": { "label": "サプリメント", "order": 1 },
+    "protein": { "label": "プロテイン・ドリンク", "order": 2 },
+    "food": { "label": "習慣食品（毎日摂取）", "order": 3 }
+  },
+
+  "statusLabels": {
+    "sufficient": { "label": "◎ 十分", "description": "推奨量の150%以上" },
+    "adequate": { "label": "○ 到達", "description": "推奨量の80〜150%" },
+    "caution": { "label": "△ 注意", "description": "推奨量の60〜80%、または食事からの上積みで到達" },
+    "insufficient": { "label": "× 不足", "description": "推奨量の60%未満" },
+    "supplemented": { "label": "─ 補充中", "description": "推奨量の設定なし。サプリで摂取中" }
+  },
+
+  "illustrations": {
+    "header": "raicho.png",
+    "hairSection": "okojo.png",
+    "productTab": "hoshigarasu.png",
+    "nutrientTab": "iwabenkei.png",
+    "sufficient": "chinguruma_hana.png",
+    "footer": "haimatsu.png",
+    "decorative": "chinguruma_watage.png",
+    "aboutPage": "landscape.png"
+  },
+
+  "aboutPage": {
+    "title": "記録者の覚書",
+    "illustration": "landscape.png",
+    "body": "この野帳は、ある旅の途中で編まれたものである。\n\n旅人は、自らの身体が消耗していることに気づいた。髪が痩せ、肩が軋み、脚が重い。長い間、身体が発する信号を聞き流していた。あるいは、聞こえていても、手当ての仕方を知らなかった。\n\nそこで、一つずつ調べ始めた。何を摂り、何が足り、何が足りないのか。どの石の下にどの草が生え、どの草がどの不調に効くのか。高山の植物が厳しい環境で生き延びるために、限られた水と光を無駄なく使うように──この身体もまた、入ってくるものを正しく配れば、自ずと立て直していくはずであると。\n\n記録は、二つの方向から引けるようにした。品目から栄養素を、栄養素から品目を。旅の途中でふと「これは何のために飲んでいるのだったか」と思った時に、立ち止まらずに済むように。\n\nイワベンケイは岩の割れ目に水を溜める。チングルマは綿毛が飛べる形になるまで待つ。ライチョウは季節ごとに羽を換える。どれも、生き延びるための知恵を、地味な反復の中に持っている。\n\nこの野帳も、そういうものでありたい。派手な処方箋ではなく、毎日の小さな確認のための道具。",
+    "signature": "稜線にて　記す"
+  }
+}
