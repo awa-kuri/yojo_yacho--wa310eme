@@ -32,7 +32,7 @@
   --garamond:'Cormorant Garamond',serif;
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
-html{-webkit-text-size-adjust:100%;}
+html{-webkit-text-size-adjust:100%;overflow-x:hidden;overflow-x:clip;}
 body{
   background:var(--paper);
   color:var(--ink);
@@ -43,6 +43,7 @@ body{
   padding-top:env(safe-area-inset-top);
   padding-bottom:env(safe-area-inset-bottom);
   overflow-x:hidden;
+  overflow-x:clip;
   position:relative;
 }
 /* ---- 霧粒（背景装飾、控えめ） ---- */
