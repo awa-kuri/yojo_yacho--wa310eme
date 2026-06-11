@@ -9,9 +9,10 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="養生野帳">
+<meta name="robots" content="noindex, nofollow">
 <link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icon.png">
-<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" type="image/png" href="icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Noto+Sans+JP:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -327,16 +328,14 @@ header h1,header .reading,header .subtitle{position:relative;z-index:1;}
 
 #about-overlay{
   position:fixed;inset:0;z-index:100;
-  display:flex;align-items:center;justify-content:center;
+  display:none;align-items:center;justify-content:center;
   padding:22px 16px;
-  opacity:0;visibility:hidden;
-  transition:opacity .3s ease, visibility .3s;
+  opacity:0;
+  transition:opacity .3s ease;
 }
-#about-overlay.open{opacity:1;visibility:visible;}
-.about-scrim{
-  position:absolute;inset:0;
-  background:rgba(58,54,50,.42);
-}
+#about-overlay.mounted{display:flex;}
+#about-overlay.open{opacity:1;}
+
 .about-memo{
   position:relative;
   background:var(--paper);
@@ -1231,15 +1230,23 @@ function switchTab(tab){
 
 /* ---------- 覚書（オーバーレイ） ---------- */
 function openAbout(){
-  document.getElementById('about-overlay').classList.add('open');
-  document.getElementById('about-overlay').setAttribute('aria-hidden','false');
+  const ov = document.getElementById('about-overlay');
+  ov.classList.add('mounted');
+  requestAnimationFrame(()=>requestAnimationFrame(()=>ov.classList.add('open')));
+  ov.setAttribute('aria-hidden','false');
   document.body.style.overflow = 'hidden';
 }
+
 function closeAbout(){
-  document.getElementById('about-overlay').classList.remove('open');
-  document.getElementById('about-overlay').setAttribute('aria-hidden','true');
+  const ov = document.getElementById('about-overlay');
+  ov.classList.remove('open');
+  ov.setAttribute('aria-hidden','true');
   document.body.style.overflow = '';
+  setTimeout(()=>{
+    if(!ov.classList.contains('open')) ov.classList.remove('mounted');
+  }, 320);
 }
+
 document.addEventListener('keydown', e=>{ if(e.key === 'Escape') closeAbout(); });
 
 function renderAbout(){
