@@ -61,7 +61,7 @@ body{
 /* ---- ヘッダー ---- */
 header{
   text-align:center;
-  padding:48px 0 6px;
+  padding:46px 0 54px;
   position:relative;
 }
 header h1{
@@ -83,7 +83,7 @@ header .subtitle{
 /* ---- ナビ ---- */
 nav{
   display:flex;justify-content:center;gap:0;
-  margin:22px 0 20px;
+  margin:4px 0 20px;
   border-top:1px solid rgba(125,138,142,.35);
   border-bottom:1px solid rgba(125,138,142,.35);
 }
@@ -100,20 +100,17 @@ nav button.active::after{
 }
 nav button:focus-visible{outline:2px solid var(--moss);outline-offset:-2px;}
 
-/* ---- 挿絵（透かし：場所を取らず背景に馴染ませる） ---- */
-.view{position:relative;}
-.watermark{
-  position:absolute;pointer-events:none;user-select:none;
-  opacity:.26;z-index:0;
+/* ---- ヘッダーの挿絵（角に寄せた背景） ---- */
+header .h-hoshigarasu{
+  position:absolute;left:-24px;top:-2px;width:106px;height:auto;
+  z-index:0;opacity:.92;pointer-events:none;
 }
-#view-products .watermark{right:-4px;top:6px;width:104px;}
-#view-nutrients .watermark{right:-4px;top:2px;width:96px;}
+header .h-iwabenkei{
+  position:absolute;right:-22px;bottom:-12px;width:92px;height:auto;
+  z-index:0;opacity:.92;pointer-events:none;
+}
+header h1,header .reading,header .subtitle{position:relative;z-index:1;}
 .legend{position:relative;}
-.legend .chinguruma{
-  position:absolute;right:6px;bottom:-4px;width:44px;height:auto;
-  opacity:.3;pointer-events:none;
-}
-.card,.cat-title,.legend span{position:relative;z-index:1;}
 
 /* ---- 上に戻る（ライチョウ） ---- */
 #to-top{
@@ -389,6 +386,10 @@ footer{
   margin-top:64px;text-align:center;
   padding:0 16px calc(86px + env(safe-area-inset-bottom));
 }
+footer .f-chinguruma{
+  width:42px;height:auto;display:block;margin:0 auto 12px;
+  transform:rotate(-3deg);opacity:.95;
+}
 footer .meta{
   font-size:10.5px;color:var(--rock);letter-spacing:.1em;line-height:1.9;
 }
@@ -417,6 +418,8 @@ footer .meta{
 <div class="wrap">
 
 <header>
+  <img class="h-hoshigarasu" src="hoshigarasu.png" alt="" aria-hidden="true">
+  <img class="h-iwabenkei" src="iwabenkei.png" alt="" aria-hidden="true">
   <button class="memo-link" onclick="openAbout()">覚 書</button>
   <h1>養生野帳</h1>
   <div class="reading">ようじょうやちょう</div>
@@ -430,15 +433,11 @@ footer .meta{
 
 <main>
   <section id="view-products" class="view visible">
-    <img class="watermark" src="hoshigarasu.png" alt="" aria-hidden="true">
     <div id="products-list"></div>
   </section>
 
   <section id="view-nutrients" class="view">
-    <img class="watermark" src="iwabenkei.png" alt="" aria-hidden="true">
-    <div class="legend" id="legend">
-      <img class="chinguruma" src="chinguruma_hana.png" alt="" aria-hidden="true">
-    </div>
+    <div class="legend" id="legend"></div>
     <div id="nutrients-list"></div>
   </section>
 
@@ -451,6 +450,7 @@ footer .meta{
 </main>
 
 <footer>
+  <img class="f-chinguruma" src="chinguruma_hana.png" alt="" aria-hidden="true">
   <div class="meta">
     データ版 1.0 ／ 2026年6月<br>
     出典：サプリメント・栄養素一覧
