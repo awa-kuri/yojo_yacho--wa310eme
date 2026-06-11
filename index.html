@@ -61,15 +61,16 @@ body{
 /* ---- ヘッダー ---- */
 header{
   text-align:center;
-  padding:34px 0 6px;
+  padding:48px 0 6px;
   position:relative;
-}
-header .raicho{
-  width:96px;height:auto;display:block;margin:0 auto 4px;
 }
 header h1{
   font-family:var(--serif);font-weight:600;font-size:30px;
   letter-spacing:.28em;text-indent:.28em;color:var(--ink);
+}
+header h1::before{
+  content:'';display:block;width:34px;height:1px;
+  background:var(--rock);margin:0 auto 16px;opacity:.6;
 }
 header .reading{
   font-family:var(--serif);font-size:11px;letter-spacing:.42em;text-indent:.42em;
@@ -99,9 +100,36 @@ nav button.active::after{
 }
 nav button:focus-visible{outline:2px solid var(--moss);outline-offset:-2px;}
 
-/* ---- タブの挿絵 ---- */
-.tab-illust{display:flex;justify-content:flex-end;padding:0 6px;margin-bottom:-6px;}
-.tab-illust img{width:88px;height:auto;opacity:.95;}
+/* ---- 挿絵（透かし：場所を取らず背景に馴染ませる） ---- */
+.view{position:relative;}
+.watermark{
+  position:absolute;pointer-events:none;user-select:none;
+  opacity:.26;z-index:0;
+}
+#view-products .watermark{right:-4px;top:6px;width:104px;}
+#view-nutrients .watermark{right:-4px;top:2px;width:96px;}
+.legend{position:relative;}
+.legend .chinguruma{
+  position:absolute;right:6px;bottom:-4px;width:44px;height:auto;
+  opacity:.3;pointer-events:none;
+}
+.card,.cat-title,.legend span{position:relative;z-index:1;}
+
+/* ---- 上に戻る（ライチョウ） ---- */
+#to-top{
+  position:fixed;right:12px;bottom:calc(28px + env(safe-area-inset-bottom));
+  z-index:60;
+  appearance:none;border:none;background:none;cursor:pointer;
+  width:62px;height:62px;padding:0;
+  opacity:0;pointer-events:none;transform:translateY(10px);
+  transition:opacity .35s ease, transform .35s ease;
+}
+#to-top.show{opacity:1;pointer-events:auto;transform:none;}
+#to-top img{
+  width:100%;height:auto;display:block;
+  filter:drop-shadow(1px 3px 4px rgba(58,54,50,.3));
+}
+#to-top:focus-visible{outline:2px solid var(--moss);outline-offset:2px;}
 
 /* ---- セクション見出し ---- */
 .cat-title{
@@ -258,8 +286,6 @@ nav button:focus-visible{outline:2px solid var(--moss);outline-offset:-2px;}
 }
 .legend span{white-space:nowrap;}
 .legend i{font-style:normal;font-weight:500;}
-.chinguruma-row{display:flex;justify-content:flex-end;padding:4px 8px 0;}
-.chinguruma-row img{width:54px;height:auto;opacity:.9;}
 
 /* ---- 髪の回復セクション ---- */
 .hair{
@@ -269,7 +295,7 @@ nav button:focus-visible{outline:2px solid var(--moss);outline-offset:-2px;}
   position:relative;overflow:visible;
 }
 .hair .okojo{
-  position:absolute;left:6px;top:-46px;width:92px;height:auto;
+  position:absolute;right:6px;top:-46px;width:92px;height:auto;
 }
 .hair h2{
   font-family:var(--serif);font-weight:500;font-size:16px;letter-spacing:.14em;
@@ -286,49 +312,92 @@ nav button:focus-visible{outline:2px solid var(--moss);outline-offset:-2px;}
 }
 .hair-chips button:focus-visible{outline:2px solid var(--moss);outline-offset:1px;}
 
-/* ---- 覚書ページ ---- */
-.about{display:none;}
-.about.visible{display:block;}
-.about .landscape{
-  width:100%;height:auto;display:block;align:center;
-  box-shadow:2px 5px 12px rgba(58,54,50,.12);
+/* ---- 覚書（野帳に挟まったメモ） ---- */
+.memo-link{
+  position:absolute;top:10px;right:0;
+  appearance:none;border:none;cursor:pointer;
+  font-family:var(--serif);font-weight:500;font-size:12px;letter-spacing:.16em;
+  color:var(--ink-light);background:var(--paper-dim);
+  padding:8px 13px 9px;
+  box-shadow:1px 2px 5px rgba(58,54,50,.18), 0 1px 0 rgba(255,255,255,.6) inset;
+  transform:rotate(1.6deg);
+  transition:transform .25s;
+}
+.memo-link:active{transform:rotate(0deg) scale(.97);}
+.memo-link:focus-visible{outline:2px solid var(--moss);outline-offset:2px;}
+
+#about-overlay{
+  position:fixed;inset:0;z-index:100;
+  display:flex;align-items:center;justify-content:center;
+  padding:22px 16px;
+  opacity:0;visibility:hidden;
+  transition:opacity .3s ease, visibility .3s;
+}
+#about-overlay.open{opacity:1;visibility:visible;}
+.about-scrim{
+  position:absolute;inset:0;
+  background:rgba(58,54,50,.42);
+}
+.about-memo{
+  position:relative;
+  background:var(--paper);
+  width:100%;max-width:440px;
+  max-height:86vh;max-height:86dvh;
+  overflow-y:auto;-webkit-overflow-scrolling:touch;
+  padding:20px 22px 32px;
+  box-shadow:0 12px 36px rgba(30,28,25,.4), 0 2px 8px rgba(30,28,25,.25);
+  transform:rotate(-.6deg) translateY(10px);
+  transition:transform .35s ease;
+}
+#about-overlay.open .about-memo{transform:rotate(-.6deg) translateY(0);}
+.memo-close{
+  position:sticky;top:-12px;z-index:2;
+  display:block;margin:-10px -10px -28px auto;
+  appearance:none;border:none;cursor:pointer;
+  width:38px;height:38px;
+  background:var(--paper);
+  box-shadow:0 1px 4px rgba(58,54,50,.15);
+  font-size:20px;line-height:1;color:var(--ink-light);
+  font-family:var(--sans);
+}
+.memo-close:focus-visible{outline:2px solid var(--moss);outline-offset:-2px;}
+.about-memo .landscape{
+  width:100%;height:auto;display:block;
+  box-shadow:1px 3px 10px rgba(58,54,50,.15);
 }
 .about-body{
-  margin-top:42px;
-  font-family:var(--serif);font-weight:400;font-size:14.5px;
+  margin-top:34px;
+  font-family:var(--serif);font-weight:400;font-size:13.5px;
   line-height:2.0;color:var(--ink-light);
 }
 .about-body h2{
-  font-family:var(--serif);font-weight:500;font-size:17px;letter-spacing:.2em;
-  color:var(--ink);margin-bottom:26px;text-align:center;
+  font-family:var(--serif);font-weight:500;font-size:16px;letter-spacing:.2em;
+  color:var(--ink);margin-bottom:24px;text-align:center;
 }
 .about-body h2::before{content:'── ';color:var(--rock);}
 .about-body p{margin-bottom:1.6em;}
 .about-sign{
-  text-align:right;font-family:var(--serif);font-size:14px;color:var(--ink);
-  margin-top:38px;letter-spacing:.1em;
+  text-align:right;font-family:var(--serif);font-size:13.5px;color:var(--ink);
+  margin-top:34px;letter-spacing:.1em;
 }
-.about .watage{
-  display:block;width:120px;height:auto;margin:46px auto 0;opacity:.8;
+.about-memo .watage{
+  display:block;width:110px;height:auto;margin:40px auto 0;opacity:.8;
 }
 
-/* ---- フッター ---- */
+/* ---- フッター・稜線 ---- */
 footer{
-  position:relative;margin-top:60px;text-align:center;
-  padding:10px 16px calc(26px + env(safe-area-inset-bottom));
-}
-.ridge{display:block;width:100%;height:46px;opacity:.5;}
-footer .haimatsu{
-  width:150px;height:auto;display:block;margin:-20px auto 12px;
+  margin-top:64px;text-align:center;
+  padding:0 16px calc(86px + env(safe-area-inset-bottom));
 }
 footer .meta{
   font-size:10.5px;color:var(--rock);letter-spacing:.1em;line-height:1.9;
 }
-footer .about-link{
-  appearance:none;border:none;background:none;cursor:pointer;
-  font-family:var(--serif);font-size:12.5px;color:var(--moss);
-  letter-spacing:.18em;margin-bottom:14px;
-  border-bottom:1px solid rgba(107,124,78,.4);padding-bottom:2px;
+.ridge-fixed{
+  position:fixed;left:0;right:0;bottom:0;
+  width:100%;height:calc(46px + env(safe-area-inset-bottom));
+  pointer-events:none;z-index:40;
+  opacity:.6;
+  display:block;
 }
 
 .view{display:none;}
@@ -339,7 +408,7 @@ footer .about-link{
   *,*::before,*::after{transition:none !important;animation:none !important;}
 }
 @media (min-width:480px){
-  header .raicho{width:110px;}
+  #to-top{right:18px;}
 }
 </style>
 </head>
@@ -348,7 +417,7 @@ footer .about-link{
 <div class="wrap">
 
 <header>
-  <img class="raicho" src="raicho.png" alt="" aria-hidden="true">
+  <button class="memo-link" onclick="openAbout()">覚 書</button>
   <h1>養生野帳</h1>
   <div class="reading">ようじょうやちょう</div>
   <div class="subtitle">サプリメント・栄養素 フィールドガイド</div>
@@ -361,15 +430,16 @@ footer .about-link{
 
 <main>
   <section id="view-products" class="view visible">
-    <div class="tab-illust"><img src="hoshigarasu.png" alt="" aria-hidden="true"></div>
+    <img class="watermark" src="hoshigarasu.png" alt="" aria-hidden="true">
     <div id="products-list"></div>
   </section>
 
   <section id="view-nutrients" class="view">
-    <div class="tab-illust"><img src="iwabenkei.png" alt="" aria-hidden="true"></div>
-    <div class="legend" id="legend"></div>
+    <img class="watermark" src="iwabenkei.png" alt="" aria-hidden="true">
+    <div class="legend" id="legend">
+      <img class="chinguruma" src="chinguruma_hana.png" alt="" aria-hidden="true">
+    </div>
     <div id="nutrients-list"></div>
-    <div class="chinguruma-row"><img src="chinguruma_hana.png" alt="" aria-hidden="true"></div>
   </section>
 
   <section id="hair-section" class="hair">
@@ -378,21 +448,9 @@ footer .about-link{
     <p>毛髪の材料と、その合成・供給を支える栄養素。</p>
     <div class="hair-chips" id="hair-chips"></div>
   </section>
-
-  <section id="view-about" class="about">
-    <img class="landscape" src="landscape.png" alt="稜線から見下ろした朝の景色。雲海と夜明けの空">
-    <div class="about-body" id="about-body"></div>
-
-  </section>
 </main>
 
 <footer>
-  <svg class="ridge" viewBox="0 0 560 46" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0,40 L60,26 L110,34 L170,14 L230,30 L300,8 L360,24 L420,16 L480,30 L530,22 L560,28 L560,46 L0,46 Z" fill="#7d8a8e" opacity="0.35"/>
-    <path d="M0,44 L80,34 L150,40 L240,24 L330,36 L430,26 L520,36 L560,32 L560,46 L0,46 Z" fill="#7d8a8e" opacity="0.5"/>
-  </svg>
-  <img class="haimatsu" src="haimatsu.png" alt="" aria-hidden="true">
-  <div><button class="about-link" id="about-toggle" onclick="toggleAbout()">記録者の覚書</button></div>
   <div class="meta">
     データ版 1.0 ／ 2026年6月<br>
     出典：サプリメント・栄養素一覧
@@ -400,6 +458,24 @@ footer .about-link{
 </footer>
 
 </div>
+
+<svg class="ridge-fixed" viewBox="0 0 560 46" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0,40 L60,26 L110,34 L170,14 L230,30 L300,8 L360,24 L420,16 L480,30 L530,22 L560,28 L560,46 L0,46 Z" fill="#7d8a8e" opacity="0.35"/>
+  <path d="M0,44 L80,34 L150,40 L240,24 L330,36 L430,26 L520,36 L560,32 L560,46 L0,46 Z" fill="#7d8a8e" opacity="0.5"/>
+</svg>
+
+<div id="about-overlay" aria-hidden="true">
+  <div class="about-scrim" onclick="closeAbout()"></div>
+  <div class="about-memo" role="dialog" aria-modal="true" aria-label="記録者の覚書">
+    <button class="memo-close" onclick="closeAbout()" aria-label="閉じる">×</button>
+    <img class="landscape" src="landscape.png" alt="稜線から見下ろした朝の景色。雲海と夜明けの空">
+    <div class="about-body" id="about-body"></div>
+  </div>
+</div>
+
+<button id="to-top" onclick="scrollToTop()" aria-label="ページの先頭へ戻る">
+  <img src="raicho.png" alt="">
+</button>
 <script>
 window.YOJO_DATA = {
   "meta": {
@@ -1123,7 +1199,7 @@ function goNutrient(id){ navigateTo('nutrients', 'n-'+id); }
 function goProduct(id){ navigateTo('products', 'p-'+id); }
 
 function navigateTo(tab, cardId){
-  if(aboutVisible) toggleAbout();
+  closeAbout();
   switchTab(tab);
   requestAnimationFrame(()=>{
     toggleCard(cardId, true);
@@ -1150,22 +1226,18 @@ function switchTab(tab){
   if(tab==='nutrients') animateBars();
 }
 
-/* ---------- 覚書 ---------- */
-let aboutVisible = false;
-function toggleAbout(){
-  aboutVisible = !aboutVisible;
-  document.getElementById('view-about').classList.toggle('visible', aboutVisible);
-  document.getElementById('view-products').classList.toggle('hidden', aboutVisible);
-  document.getElementById('view-nutrients').classList.toggle('hidden', aboutVisible);
-  document.getElementById('hair-section').classList.toggle('hidden', aboutVisible);
-  document.querySelector('nav').classList.toggle('hidden', aboutVisible);
-  document.getElementById('about-toggle').textContent = aboutVisible? '野帳へ戻る' : '記録者の覚書';
-  if(aboutVisible){
-    window.scrollTo({top:0, behavior:'smooth'});
-  }else{
-    switchTab(currentTab);
-  }
+/* ---------- 覚書（オーバーレイ） ---------- */
+function openAbout(){
+  document.getElementById('about-overlay').classList.add('open');
+  document.getElementById('about-overlay').setAttribute('aria-hidden','false');
+  document.body.style.overflow = 'hidden';
 }
+function closeAbout(){
+  document.getElementById('about-overlay').classList.remove('open');
+  document.getElementById('about-overlay').setAttribute('aria-hidden','true');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e=>{ if(e.key === 'Escape') closeAbout(); });
 
 function renderAbout(){
   const a = D.aboutPage;
@@ -1186,6 +1258,13 @@ function animateBars(){
     });
   });
 }
+
+/* ---------- 上に戻る（ライチョウ） ---------- */
+const toTopBtn = document.getElementById('to-top');
+function scrollToTop(){ window.scrollTo({top:0, behavior:'smooth'}); }
+window.addEventListener('scroll', ()=>{
+  toTopBtn.classList.toggle('show', window.scrollY > 360);
+}, {passive:true});
 
 /* ---------- 初期化 ---------- */
 renderProducts();
