@@ -93,7 +93,7 @@
     },
     {
       "id": "cocoa",
-      "name": "純ココアパウダー（森永）",
+      "name": "純ココア（森永）",
       "category": "protein",
       "dailyDose": "約5g（昼食プロテインに混合）",
       "illustration": null,
@@ -159,8 +159,8 @@
       "dailyDose": "1枚（朝食）",
       "illustration": null,
       "nutrients": [
-        { "nutrientId": "protein", "amount": 3.5, "unit": "g", "note": "概算" },
-        { "nutrientId": "calcium", "amount": 100, "unit": "mg", "note": "概算" }
+        { "nutrientId": "protein", "amount": 3.7, "unit": "g", "note": "概算" },
+        { "nutrientId": "calcium", "amount": 108, "unit": "mg", "note": "概算" }
       ],
       "comment": "カルシウムとたんぱく質の補助。朝食のパンに載せるだけで仕事をしている。"
     },
@@ -354,7 +354,7 @@
         { "productId": "natto", "amount": 1.5 },
         { "productId": "boiled-egg", "amount": 1.0 },
         { "productId": "cocoa", "amount": 0.7 },
-        { "productId": "whole-wheat-bread", "amount": 0.5 }
+        { "productId": "whole-wheat-bread", "amount": 0.8 }
       ],
       "hairRelated": true
     },
@@ -435,7 +435,7 @@
         { "productId": "boiled-egg", "amount": 6.5 },
         { "productId": "natto", "amount": 6.5 },
         { "productId": "skim-milk", "amount": 5.3 },
-        { "productId": "cheese", "amount": 3.5 }
+        { "productId": "cheese", "amount": 3.7 }
       ],
       "hairRelated": true
     },
@@ -451,7 +451,7 @@
       "comment": "マルチミネラル250mg＋スキムミルク80mg＋チーズ100mgで430mg。夕食の豆腐や牛乳からの上積みを含めればおおむね到達するが、余裕は少ない。",
       "sources": [
         { "productId": "dhc-multi-mineral", "amount": 250 },
-        { "productId": "cheese", "amount": 100 },
+        { "productId": "cheese", "amount": 108 },
         { "productId": "skim-milk", "amount": 80 }
       ],
       "hairRelated": false
