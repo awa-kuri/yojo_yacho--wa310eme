@@ -451,7 +451,7 @@
       "sources": [
         { "productId": "sunstyle", "amount": 35 },
         { "productId": "boiled-egg", "amount": 6.5 },
-     　 { "productId": "whole-wheat-bread", "amount": 6.9 },
+        { "productId": "whole-wheat-bread", "amount": 6.9 },
         { "productId": "natto", "amount": 6.5 },
         { "productId": "skim-milk", "amount": 5.3 },
         { "productId": "cheese", "amount": 3.7 },
