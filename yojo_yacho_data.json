@@ -139,7 +139,7 @@
         { "nutrientId": "calcium", "amount": 240, "unit": "mg" },
         { "nutrientId": "vitamin-d", "amount": 3.0, "unit": "μg" },
         { "nutrientId": "magnesium", "amount": 39.6, "unit": "mg", "note": "概算" },
-        { "nutrientId": "iron"", "amount": 0.8, "unit": "mg", "note": "概算" }
+        { "nutrientId": "iron", "amount": 0.8, "unit": "mg", "note": "概算" }
       ],
       "comment": "カルシウムとビタミンDを加えたまるごと大豆飲料。栄養機能食品（ビタミンD）。大豆イソフラボンや食物繊維も豊富。"
     ],
