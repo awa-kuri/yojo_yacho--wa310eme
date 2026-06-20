@@ -2,8 +2,8 @@
   "meta": {
     "appName": "養生野帳",
     "appNameReading": "ようじょうやちょう",
-    "dataVersion": "1.05",
-    "createdDate": "2026-06-09",
+    "dataVersion": "1.2",
+    "createdDate": "2026-06-20",
     "dataSource": "サプリメント・栄養素一覧.md（2026-06-02作成）",
     "note": "SUNSTYLEのビタミンB群は総摂取量からの逆算による概算値"
   },
@@ -93,7 +93,7 @@
     },
     {
       "id": "cocoa",
-      "name": "純ココア（森永）",
+      "name": "純ココア",
       "category": "protein",
       "dailyDose": "約5g（昼食プロテインに混合）",
       "illustration": null,
@@ -129,6 +129,22 @@
       "comment": "朝食の定番。たんぱく質、鉄、亜鉛、ビタミンDを一個でまかなう、堅実な一品。"
     },
     {
+      "id": "milkdaizu",
+      "name": "スゴイダイズ",
+      "category": "food",
+      "dailyDose": "200ml（朝食）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 6.2, "unit": "g" },
+        { "nutrientId": "calcium", "amount": 240, "unit": "mg"},
+        { "nutrientId": "vitamin-d", "amount": 3.0, "unit": "μg"},
+        { "nutrientId": "magnesium", "amount": 39.6, "unit": "mg", "note": "概算" },
+        { "nutrientId": "iron"", "amount": 0.8, "unit": "mg", "note": "概算" }
+      ],
+      "comment": "カルシウムとビタミンDを加えたまるごと大豆飲料。栄養機能食品（ビタミンD）。大豆イソフラボンや食物繊維も豊富。"
+    }
+  ],
+    {
       "id": "natto",
       "name": "納豆",
       "category": "food",
@@ -145,10 +161,11 @@
       "id": "whole-wheat-bread",
       "name": "全粒粉入り食パン",
       "category": "food",
-      "dailyDose": "朝食",
+      "dailyDose": "5枚切り1枚（朝食）",
       "illustration": null,
       "nutrients": [
-        { "nutrientId": "iron", "amount": 0.5, "unit": "mg" }
+        { "nutrientId": "protein", "amount": 6.9, "unit": "g" },
+        { "nutrientId": "iron", "amount": 0.8, "unit": "mg" }
       ],
       "comment": "鉄と不溶性食物繊維の地味な供給源。朝食の土台。"
     },
@@ -271,7 +288,8 @@
       "comment": "SUNSTYLE2回の運用が生命線。1回の日は意識して日光を浴びるか、他の供給源を検討せよ。",
       "sources": [
         { "productId": "sunstyle", "amount": 8.6 },
-        { "productId": "boiled-egg", "amount": 1.8 }
+        { "productId": "boiled-egg", "amount": 1.8 },
+        { "productId": "milkdaizu", "amount": 3.0 }
       ],
       "hairRelated": true
     },
@@ -354,7 +372,8 @@
         { "productId": "natto", "amount": 1.5 },
         { "productId": "boiled-egg", "amount": 1.0 },
         { "productId": "cocoa", "amount": 0.7 },
-        { "productId": "whole-wheat-bread", "amount": 0.8 }
+        { "productId": "whole-wheat-bread", "amount": 0.8 },
+        { "productId": "milkdaizu", "amount": 0.8 }
       ],
       "hairRelated": true
     },
@@ -433,9 +452,11 @@
       "sources": [
         { "productId": "sunstyle", "amount": 35 },
         { "productId": "boiled-egg", "amount": 6.5 },
+     　 { "productId": "whole-wheat-bread", "amount": 6.9 },
         { "productId": "natto", "amount": 6.5 },
         { "productId": "skim-milk", "amount": 5.3 },
-        { "productId": "cheese", "amount": 3.7 }
+        { "productId": "cheese", "amount": 3.7 },
+        { "productId": "milkdaizu", "amount": 6.2 }
       ],
       "hairRelated": true
     },
@@ -452,7 +473,8 @@
       "sources": [
         { "productId": "dhc-multi-mineral", "amount": 250 },
         { "productId": "cheese", "amount": 108 },
-        { "productId": "skim-milk", "amount": 80 }
+        { "productId": "skim-milk", "amount": 80 },
+        { "productId": "milkdaizu", "amount": 240 }
       ],
       "hairRelated": false
     },
@@ -468,7 +490,8 @@
       "comment": "マルチミネラル125mg＋アーモンド40mgで165mg。納豆、全粒粉パン、その他の食事からの寄与を含めても、余裕のある栄養素ではない。",
       "sources": [
         { "productId": "dhc-multi-mineral", "amount": 125 },
-        { "productId": "almond", "amount": 40 }
+        { "productId": "almond", "amount": 40 },
+        { "productId": "milkdaizu", "amount": 39.6 }
       ],
       "hairRelated": false
     },
