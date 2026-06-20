@@ -280,7 +280,7 @@
       "name": "ビタミンD",
       "rda": 8.5,
       "unit": "μg",
-      "currentIntake": 10.4,
+      "currentIntake": 13.4,
       "status": "adequate",
       "purpose": "毛包の成長サイクルに関与、カルシウム吸収の促進、免疫機能",
       "notes": "SUNSTYLEを1回に減らした場合、4.3μg＋ゆで卵1.8μg＝6.1μgとなり不足に転落する。要注意。血液検査（25-OH）未実施。",
@@ -291,6 +291,37 @@
         { "productId": "milkdaizu", "amount": 3.0 }
       ],
       "hairRelated": true
+    },
+    {
+      "id": "vitamin-e",
+      "name": "ビタミンE",
+      "rda": 5.0,
+      "unit": "mg",
+      "currentIntake": 13.0,
+      "status": "sufficient",
+      "purpose": "抗酸化作用、血行促進、細胞膜の保護",
+      "notes": null,
+      "comment": "SUNSTYLE9mg＋アーモンド4mgで十分。抗酸化と血行促進──地味だが身体の修復を下支えしている。",
+      "sources": [
+        { "productId": "sunstyle", "amount": 9.0 },
+        { "productId": "almond", "amount": 4.0 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "vitamin-a",
+      "name": "ビタミンA",
+      "rda": 650,
+      "unit": "μg",
+      "currentIntake": 1020,
+      "status": "sufficient",
+      "purpose": "皮膚・粘膜の健康、視覚機能、免疫機能",
+      "notes": "脂溶性ビタミンのため過剰摂取に注意が必要だが、SUNSTYLEの量であれば耐容上限量（2700μg）の範囲内。",
+      "comment": "SUNSTYLEのみで推奨量を超えている。追加は不要。",
+      "sources": [
+        { "productId": "sunstyle", "amount": 1020 }
+      ],
+      "hairRelated": false
     },
     {
       "id": "folic-acid",
@@ -361,7 +392,7 @@
       "name": "鉄",
       "rda": 10.5,
       "unit": "mg",
-      "currentIntake": 11.2,
+      "currentIntake": 12.3,
       "status": "adequate",
       "purpose": "毛母細胞への酸素供給、赤血球の形成、貧血予防",
       "notes": "ビタミンC（500mg摂取中）が非ヘム鉄の吸収を促進。フェリチン検査未実施──貯蔵量の実態は不明。",
@@ -392,6 +423,108 @@
         { "productId": "boiled-egg", "amount": 0.8 }
       ],
       "hairRelated": true
+    },
+    {
+      "id": "calcium",
+      "name": "カルシウム",
+      "rda": 650,
+      "unit": "mg",
+      "currentIntake": 680,
+      "status": "caution",
+      "purpose": "骨・歯の形成、筋肉の収縮、神経伝達",
+      "notes": "推奨量650mgに対して不足気味。ただし牛乳（運動後プロテインに使用）やその他の食事からの摂取を含めると、もう少し上積みがある。",
+      "comment": "マルチミネラル250mg＋スキムミルク80mg＋チーズ100mgで430mg。夕食の豆腐や牛乳からの上積みを含めればおおむね到達するが、余裕は少ない。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 250 },
+        { "productId": "cheese", "amount": 108 },
+        { "productId": "skim-milk", "amount": 80 },
+        { "productId": "milkdaizu", "amount": 240 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "magnesium",
+      "name": "マグネシウム",
+      "rda": 270,
+      "unit": "mg",
+      "currentIntake": 205,
+      "status": "caution",
+      "purpose": "エネルギー代謝、筋肉の弛緩、神経の安定、骨の形成",
+      "notes": "推奨量に対して不足気味だが、食事全体からの摂取を含めるともう少し上積みがある。足のつりや筋肉の緊張が気になる場合は注意。",
+      "comment": "マルチミネラル125mg＋アーモンド40mgで165mg。納豆、全粒粉パン、その他の食事からの寄与を含めても、余裕のある栄養素ではない。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 125 },
+        { "productId": "almond", "amount": 40 },
+        { "productId": "milkdaizu", "amount": 39.6 }
+      ],
+      "hairRelated": false
+    },
+
+    {
+      "id": "copper",
+      "name": "銅",
+      "rda": 0.7,
+      "unit": "mg",
+      "currentIntake": 0.6,
+      "status": "caution",
+      "purpose": "鉄の利用促進、メラニン色素の合成、抗酸化酵素の構成成分",
+      "notes": "亜鉛との拮抗関係がある。亜鉛を単体で増やすと銅の吸収が阻害される。現在のマルチミネラルの配合バランスが重要。",
+      "comment": "マルチミネラルの0.6mgのみ。推奨量にわずかに足りないが、食事からの寄与を含めれば到達する。亜鉛との均衡を崩さぬことが肝要。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 0.6 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "manganese",
+      "name": "マンガン",
+      "rda": 3.5,
+      "unit": "mg",
+      "currentIntake": 1.5,
+      "status": "caution",
+      "purpose": "骨の形成、糖質・脂質の代謝、抗酸化酵素の構成成分",
+      "notes": "マルチミネラルからの1.5mgのみだが、穀類や豆類からの食事摂取を含めればおおむね到達する。",
+      "comment": "食事からの寄与が大きい栄養素。サプリだけでは不足に見えるが、納豆、全粒粉パンなどから補われている。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 1.5 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "protein",
+      "name": "たんぱく質",
+      "rda": 50,
+      "unit": "g",
+      "currentIntake": 83,
+      "status": "sufficient",
+      "purpose": "髪の主成分ケラチンの原料、筋肉の維持・修復、全身の組織構成",
+      "notes": "朝食23g＋昼食（SUNSTYLE17.5g＋スキムミルク5.3g）＋運動後（SUNSTYLE17.5g＋牛乳7g）＋夕食（納豆6.5g＋その他）で確保。",
+      "comment": "一日を通して分散摂取できている。筋トレ後のゴールデンタイムにも確実に入れている。現在の布陣で十分。",
+      "sources": [
+        { "productId": "sunstyle", "amount": 35 },
+        { "productId": "boiled-egg", "amount": 6.5 },
+        { "productId": "whole-wheat-bread", "amount": 6.9 },
+        { "productId": "natto", "amount": 6.5 },
+        { "productId": "skim-milk", "amount": 5.3 },
+        { "productId": "cheese", "amount": 3.7 },
+        { "productId": "milkdaizu", "amount": 6.2 }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "inositol",
+      "name": "イノシトール",
+      "rda": null,
+      "unit": "mg",
+      "currentIntake": 50,
+      "status": "supplemented",
+      "purpose": "脂質代謝、細胞膜の構成、神経機能の補助",
+      "notes": "ビタミン様物質。推奨量は設定されていないが、B群と協働して代謝を支える。",
+      "comment": "DHCビタミンBミックスの付随成分。主役ではないが、B群の補佐として静かに働いている。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 50 }
+      ],
+      "hairRelated": false
     },
     {
       "id": "l-cysteine",
@@ -437,140 +570,9 @@
         { "productId": "dear-natura-dha", "amount": 65 }
       ],
       "hairRelated": false
-    },
-    {
-      "id": "protein",
-      "name": "たんぱく質",
-      "rda": 50,
-      "unit": "g",
-      "currentIntake": 83,
-      "status": "sufficient",
-      "purpose": "髪の主成分ケラチンの原料、筋肉の維持・修復、全身の組織構成",
-      "notes": "朝食23g＋昼食（SUNSTYLE17.5g＋スキムミルク5.3g）＋運動後（SUNSTYLE17.5g＋牛乳7g）＋夕食（納豆6.5g＋その他）で確保。",
-      "comment": "一日を通して分散摂取できている。筋トレ後のゴールデンタイムにも確実に入れている。現在の布陣で十分。",
-      "sources": [
-        { "productId": "sunstyle", "amount": 35 },
-        { "productId": "boiled-egg", "amount": 6.5 },
-        { "productId": "whole-wheat-bread", "amount": 6.9 },
-        { "productId": "natto", "amount": 6.5 },
-        { "productId": "skim-milk", "amount": 5.3 },
-        { "productId": "cheese", "amount": 3.7 },
-        { "productId": "milkdaizu", "amount": 6.2 }
-      ],
-      "hairRelated": true
-    },
-    {
-      "id": "calcium",
-      "name": "カルシウム",
-      "rda": 650,
-      "unit": "mg",
-      "currentIntake": 430,
-      "status": "caution",
-      "purpose": "骨・歯の形成、筋肉の収縮、神経伝達",
-      "notes": "推奨量650mgに対して不足気味。ただし牛乳（運動後プロテインに使用）やその他の食事からの摂取を含めると、もう少し上積みがある。",
-      "comment": "マルチミネラル250mg＋スキムミルク80mg＋チーズ100mgで430mg。夕食の豆腐や牛乳からの上積みを含めればおおむね到達するが、余裕は少ない。",
-      "sources": [
-        { "productId": "dhc-multi-mineral", "amount": 250 },
-        { "productId": "cheese", "amount": 108 },
-        { "productId": "skim-milk", "amount": 80 },
-        { "productId": "milkdaizu", "amount": 240 }
-      ],
-      "hairRelated": false
-    },
-    {
-      "id": "magnesium",
-      "name": "マグネシウム",
-      "rda": 270,
-      "unit": "mg",
-      "currentIntake": 165,
-      "status": "caution",
-      "purpose": "エネルギー代謝、筋肉の弛緩、神経の安定、骨の形成",
-      "notes": "推奨量に対して不足気味だが、食事全体からの摂取を含めるともう少し上積みがある。足のつりや筋肉の緊張が気になる場合は注意。",
-      "comment": "マルチミネラル125mg＋アーモンド40mgで165mg。納豆、全粒粉パン、その他の食事からの寄与を含めても、余裕のある栄養素ではない。",
-      "sources": [
-        { "productId": "dhc-multi-mineral", "amount": 125 },
-        { "productId": "almond", "amount": 40 },
-        { "productId": "milkdaizu", "amount": 39.6 }
-      ],
-      "hairRelated": false
-    },
-    {
-      "id": "vitamin-e",
-      "name": "ビタミンE",
-      "rda": 5.0,
-      "unit": "mg",
-      "currentIntake": 13.0,
-      "status": "sufficient",
-      "purpose": "抗酸化作用、血行促進、細胞膜の保護",
-      "notes": null,
-      "comment": "SUNSTYLE9mg＋アーモンド4mgで十分。抗酸化と血行促進──地味だが身体の修復を下支えしている。",
-      "sources": [
-        { "productId": "sunstyle", "amount": 9.0 },
-        { "productId": "almond", "amount": 4.0 }
-      ],
-      "hairRelated": false
-    },
-    {
-      "id": "copper",
-      "name": "銅",
-      "rda": 0.7,
-      "unit": "mg",
-      "currentIntake": 0.6,
-      "status": "caution",
-      "purpose": "鉄の利用促進、メラニン色素の合成、抗酸化酵素の構成成分",
-      "notes": "亜鉛との拮抗関係がある。亜鉛を単体で増やすと銅の吸収が阻害される。現在のマルチミネラルの配合バランスが重要。",
-      "comment": "マルチミネラルの0.6mgのみ。推奨量にわずかに足りないが、食事からの寄与を含めれば到達する。亜鉛との均衡を崩さぬことが肝要。",
-      "sources": [
-        { "productId": "dhc-multi-mineral", "amount": 0.6 }
-      ],
-      "hairRelated": false
-    },
-    {
-      "id": "inositol",
-      "name": "イノシトール",
-      "rda": null,
-      "unit": "mg",
-      "currentIntake": 50,
-      "status": "supplemented",
-      "purpose": "脂質代謝、細胞膜の構成、神経機能の補助",
-      "notes": "ビタミン様物質。推奨量は設定されていないが、B群と協働して代謝を支える。",
-      "comment": "DHCビタミンBミックスの付随成分。主役ではないが、B群の補佐として静かに働いている。",
-      "sources": [
-        { "productId": "dhc-b-mix", "amount": 50 }
-      ],
-      "hairRelated": false
-    },
-    {
-      "id": "vitamin-a",
-      "name": "ビタミンA",
-      "rda": 650,
-      "unit": "μg",
-      "currentIntake": 1020,
-      "status": "sufficient",
-      "purpose": "皮膚・粘膜の健康、視覚機能、免疫機能",
-      "notes": "脂溶性ビタミンのため過剰摂取に注意が必要だが、SUNSTYLEの量であれば耐容上限量（2700μg）の範囲内。",
-      "comment": "SUNSTYLEのみで推奨量を超えている。追加は不要。",
-      "sources": [
-        { "productId": "sunstyle", "amount": 1020 }
-      ],
-      "hairRelated": false
-    },
-    {
-      "id": "manganese",
-      "name": "マンガン",
-      "rda": 3.5,
-      "unit": "mg",
-      "currentIntake": 1.5,
-      "status": "caution",
-      "purpose": "骨の形成、糖質・脂質の代謝、抗酸化酵素の構成成分",
-      "notes": "マルチミネラルからの1.5mgのみだが、穀類や豆類からの食事摂取を含めればおおむね到達する。",
-      "comment": "食事からの寄与が大きい栄養素。サプリだけでは不足に見えるが、納豆、全粒粉パンなどから補われている。",
-      "sources": [
-        { "productId": "dhc-multi-mineral", "amount": 1.5 }
-      ],
-      "hairRelated": false
     }
   ],
+
 
   "categories": {
     "supplement": { "label": "サプリメント", "order": 1 },
