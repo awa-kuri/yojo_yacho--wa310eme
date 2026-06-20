@@ -127,8 +127,22 @@ header h1,header .reading,header .subtitle{position:relative;z-index:1;}
 }
 #to-top img{
   width:100%;height:auto;display:block;
-  transform:scaleX(-1);
   filter:drop-shadow(-1px 3px 4px rgba(58,54,50,.3));
+  opacity: 0; /* 最初は透明 */
+  transform: translateY(-20px); /* 少し上（20px）に配置 */
+  animation: fadeInDownStyle 1.2s ease-out forwards; /* 1.2秒かけて演出を実行 */}
+
+#to-top img:hover{
+/* 触れると、少し上に浮き上がりつつ、1.1倍に膨らむ */
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* 動きの規則 */
+@keyframes fadeInDownStyle {
+  to {
+    opacity: 1; /* 完全に表示 */
+    transform: translateY(0); /* 本来の位置へ戻る */
+  }
 }
 
 /* ---- セクション見出し ---- */
@@ -482,7 +496,7 @@ footer .meta{
 </div>
 
 <button id="to-top" onclick="scrollToTop()" aria-label="ページの先頭へ戻る">
-  <img src="raicho.png" alt="">
+  <img src="raicho.png">
 </button>
 <script>
 let D = null;
