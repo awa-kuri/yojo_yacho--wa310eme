@@ -216,7 +216,7 @@
         { "nutrientId": "magnesium", "amount": 32, "unit": "mg", "note": "概算" },
         { "nutrientId": "iron", "amount": 0.9, "unit": "mg", "note": "概算" }
       ],
-      "comment": "カルシウムとたんぱく質の補助。朝食のパンに載せるだけで仕事をしている。"
+      "comment": "大さじ1杯でカルシウム、マグネシウム、鉄を万遍なく上積みする。サプリの隙間を埋める貴重な補給兵である。"
     },
   ],
 
@@ -420,7 +420,7 @@
       "name": "鉄",
       "rda": 10.5,
       "unit": "mg",
-      "currentIntake": 23.2,
+      "currentIntake": 23.4,
       "status": "adequate",
       "purpose": "毛母細胞への酸素供給、赤血球の形成、貧血予防",
       "notes": "ビタミンC（500mg摂取中）が非ヘム鉄の吸収を促進。フェリチン検査未実施──貯蔵量の実態は不明。",
@@ -527,7 +527,7 @@
       "name": "たんぱく質",
       "rda": 50,
       "unit": "g",
-      "currentIntake": 83,
+      "currentIntake": 70.1,
       "status": "sufficient",
       "purpose": "髪の主成分ケラチンの原料、筋肉の維持・修復、全身の組織構成",
       "notes": "朝食23g＋昼食（SUNSTYLE17.5g＋スキムミルク5.3g）＋運動後（SUNSTYLE17.5g＋牛乳7g）＋夕食（納豆6.5g＋その他）で確保。",
