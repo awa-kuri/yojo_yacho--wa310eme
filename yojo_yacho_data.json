@@ -2,9 +2,9 @@
   "meta": {
     "appName": "養生野帳",
     "appNameReading": "ようじょうやちょう",
-    "dataVersion": "1.2",
-    "createdDate": "2026-06-20",
-    "dataSource": "サプリメント・栄養素一覧.md（2026-06-02作成）",
+    "dataVersion": "2.0",
+    "createdDate": "2026-06-21",
+    "dataSource": "サプリメント・栄養素一覧.md（2026-06-21更新）",
     "note": "SUNSTYLEのビタミンB群は総摂取量からの逆算による概算値"
   },
 
@@ -68,6 +68,19 @@
         { "nutrientId": "pantothenic-acid", "amount": 30, "unit": "mg" }
       ],
       "comment": "しみ対策に加え、L-システインは髪のケラチン原料でもある。2026年6月に再開。二つの目的を一度に担う。"
+    },
+    {
+      "id": "dhc-heme-iron",
+      "name": "DHC ヘム鉄",
+      "category": "supplement",
+      "dailyDose": "2錠（夕食後）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "ieon", "amount": 10.0, "unit": "mg" },
+        { "nutrientId": "folic-acid", "amount": 75, "unit": "μg" },
+        { "nutrientId": "vitamin-b12", "amount": 1, "unit": "μg" }
+      ],
+      "comment": "2026年6月20日より追加。生理後の顕著な眠気や倦怠感は、鉄分不足が原因の可能性がある。フェリチンが低い人は、生理後に顕著に疲労が出るため、鉄分摂取を意識的に増やす必要がある。"
     },
     {
       "id": "sunstyle",
@@ -191,7 +204,20 @@
         { "nutrientId": "magnesium", "amount": 40, "unit": "mg", "note": "概算" }
       ],
       "comment": "ビタミンE、マグネシウム、食物繊維。間食としては理想的な組み合わせ。"
-    }
+    },
+    {
+      "id": "goma",
+      "name": "黒すりごま",
+      "category": "food",
+      "dailyDose": "大さじ1/約9g",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "calcium", "amount": 108, "unit": "mg", "note": "概算" },
+        { "nutrientId": "magnesium", "amount": 32, "unit": "mg", "note": "概算" },
+        { "nutrientId": "iron", "amount": 0.9, "unit": "mg", "note": "概算" }
+      ],
+      "comment": "カルシウムとたんぱく質の補助。朝食のパンに載せるだけで仕事をしている。"
+    },
   ],
 
   "nutrients": [
@@ -255,6 +281,7 @@
       "comment": "十分。動物性食品に多い栄養素だが、サプリで十分量を確保している。",
       "sources": [
         { "productId": "dhc-b-mix", "amount": 20 },
+        { "productId": "dhc-heme-iron", "amount": 1 },
         { "productId": "sunstyle", "amount": 2.2 }
       ],
       "hairRelated": false
@@ -335,6 +362,7 @@
       "comment": "十分。DHCビタミンBミックスとSUNSTYLEの合算で推奨量を大きく超えている。",
       "sources": [
         { "productId": "dhc-b-mix", "amount": 200 },
+        { "productId": "dhc-heme-iron", "amount": 75 },
         { "productId": "sunstyle", "amount": 180 }
       ],
       "hairRelated": false
@@ -392,18 +420,20 @@
       "name": "鉄",
       "rda": 10.5,
       "unit": "mg",
-      "currentIntake": 12.3,
+      "currentIntake": 23.2,
       "status": "adequate",
       "purpose": "毛母細胞への酸素供給、赤血球の形成、貧血予防",
       "notes": "ビタミンC（500mg摂取中）が非ヘム鉄の吸収を促進。フェリチン検査未実施──貯蔵量の実態は不明。",
       "comment": "数値上は推奨量に到達しているが、吸収率と消費量には個人差がある。血液検査で確認するのが理想。",
       "sources": [
         { "productId": "dhc-multi-mineral", "amount": 7.5 },
+        { "productId": "dhc-heme-iron", "amount": 10.0 },
         { "productId": "natto", "amount": 1.5 },
         { "productId": "boiled-egg", "amount": 1.0 },
         { "productId": "cocoa", "amount": 0.7 },
         { "productId": "whole-wheat-bread", "amount": 0.8 },
-        { "productId": "milkdaizu", "amount": 0.8 }
+        { "productId": "milkdaizu", "amount": 0.8 },
+        { "productId": "goma", "amount": 0.9 }
       ],
       "hairRelated": true
     },
@@ -429,16 +459,17 @@
       "name": "カルシウム",
       "rda": 650,
       "unit": "mg",
-      "currentIntake": 680,
-      "status": "caution",
+      "currentIntake": 788,
+      "status": "adequate",
       "purpose": "骨・歯の形成、筋肉の収縮、神経伝達",
-      "notes": "推奨量650mgに対して不足気味。ただし牛乳（運動後プロテインに使用）やその他の食事からの摂取を含めると、もう少し上積みがある。",
-      "comment": "マルチミネラル250mg＋スキムミルク80mg＋チーズ100mgで430mg。夕食の豆腐や牛乳からの上積みを含めればおおむね到達するが、余裕は少ない。",
+      "notes": "スゴイダイズや黒すりごまの反映・追加で大幅改善。",
+      "comment": "食品からの摂取が中心であるため、習慣食品の継続が肝要。",
       "sources": [
         { "productId": "dhc-multi-mineral", "amount": 250 },
         { "productId": "cheese", "amount": 108 },
         { "productId": "skim-milk", "amount": 80 },
-        { "productId": "milkdaizu", "amount": 240 }
+        { "productId": "milkdaizu", "amount": 240 },
+        { "productId": "goma", "amount": 108 }
       ],
       "hairRelated": false
     },
@@ -447,15 +478,16 @@
       "name": "マグネシウム",
       "rda": 270,
       "unit": "mg",
-      "currentIntake": 205,
+      "currentIntake": 237,
       "status": "caution",
       "purpose": "エネルギー代謝、筋肉の弛緩、神経の安定、骨の形成",
       "notes": "推奨量に対して不足気味だが、食事全体からの摂取を含めるともう少し上積みがある。足のつりや筋肉の緊張が気になる場合は注意。",
-      "comment": "マルチミネラル125mg＋アーモンド40mgで165mg。納豆、全粒粉パン、その他の食事からの寄与を含めても、余裕のある栄養素ではない。",
+      "comment": "スゴイダイズと黒すりごまの反映・追加で改善するも、推奨量にやや届かず注意域。納豆、全粒粉パン、その他の食事からの寄与を含めても、余裕のある栄養素ではない。",
       "sources": [
         { "productId": "dhc-multi-mineral", "amount": 125 },
         { "productId": "almond", "amount": 40 },
-        { "productId": "milkdaizu", "amount": 39.6 }
+        { "productId": "milkdaizu", "amount": 39.6 },
+        { "productId": "goma", "amount": 32 }
       ],
       "hairRelated": false
     },
