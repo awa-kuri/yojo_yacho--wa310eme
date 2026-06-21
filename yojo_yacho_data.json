@@ -76,7 +76,7 @@
       "dailyDose": "2錠（夕食後）",
       "illustration": null,
       "nutrients": [
-        { "nutrientId": "ieon", "amount": 10.0, "unit": "mg" },
+        { "nutrientId": "iron", "amount": 10.0, "unit": "mg" },
         { "nutrientId": "folic-acid", "amount": 75, "unit": "μg" },
         { "nutrientId": "vitamin-b12", "amount": 1, "unit": "μg" }
       ],
