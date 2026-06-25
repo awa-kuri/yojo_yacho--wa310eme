@@ -3,7 +3,7 @@
     "appName": "養生野帳",
     "appNameReading": "ようじょうやちょう",
     "dataVersion": "2.0",
-    "createdDate": "2026-06-21",
+    "createdDate": "2026-06-25",
     "dataSource": "サプリメント・栄養素一覧.md（2026-06-21更新）",
     "note": "SUNSTYLEのビタミンB群は総摂取量からの逆算による概算値"
   },
@@ -73,7 +73,7 @@
       "id": "dhc-heme-iron",
       "name": "DHC ヘム鉄",
       "category": "supplement",
-      "dailyDose": "2錠（夕食後）",
+      "dailyDose": "2錠（昼食後）",
       "illustration": null,
       "nutrients": [
         { "nutrientId": "iron", "amount": 10.0, "unit": "mg" },
@@ -102,7 +102,7 @@
         { "nutrientId": "folic-acid", "amount": 180, "unit": "μg", "note": "概算" },
         { "nutrientId": "pantothenic-acid", "amount": 4.6, "unit": "mg", "note": "概算" }
       ],
-      "comment": "栄養バランスの要。1日2回の運用でビタミンDが推奨量に到達する。1回に減った日は、ビタミンDが不足に転落する。注意せよ。"
+      "comment": "栄養バランスの要。1日2回の運用でビタミンDが推奨量に到達する。注意せよ。"
     },
     {
       "id": "cocoa",
@@ -310,7 +310,7 @@
       "currentIntake": 13.4,
       "status": "adequate",
       "purpose": "毛包の成長サイクルに関与、カルシウム吸収の促進、免疫機能",
-      "notes": "SUNSTYLEを1回に減らした場合、4.3μg＋ゆで卵1.8μg＝6.1μgとなり不足に転落する。要注意。血液検査（25-OH）未実施。",
+      "notes": "SUNSTYLE×2で8.6μg＋スゴイダイズ3μg＋ゆで卵1.8μg。追加不要。血液検査（25-OH）未実施。",
       "comment": "SUNSTYLE2回の運用が生命線。1回の日は意識して日光を浴びるか、他の供給源を検討せよ。",
       "sources": [
         { "productId": "sunstyle", "amount": 8.6 },
@@ -424,7 +424,7 @@
       "status": "adequate",
       "purpose": "毛母細胞への酸素供給、赤血球の形成、貧血予防",
       "notes": "ビタミンC（500mg摂取中）が非ヘム鉄の吸収を促進。フェリチン検査未実施──貯蔵量の実態は不明。",
-      "comment": "数値上は推奨量に到達しているが、吸収率と消費量には個人差がある。血液検査で確認するのが理想。",
+      "comment": "数値上は推奨量に到達しているが、吸収率と消費量には個人差がある。鉄の長期枯渇補填のため当面多めに摂取（上限40mg以内）。",
       "sources": [
         { "productId": "dhc-multi-mineral", "amount": 7.5 },
         { "productId": "dhc-heme-iron", "amount": 10.0 },
@@ -462,8 +462,8 @@
       "currentIntake": 788,
       "status": "adequate",
       "purpose": "骨・歯の形成、筋肉の収縮、神経伝達",
-      "notes": "スゴイダイズや黒すりごまの反映・追加で大幅改善。",
-      "comment": "食品からの摂取が中心であるため、習慣食品の継続が肝要。",
+      "notes": null,
+      "comment": "スゴイダイズや黒すりごまの反映・追加で注意域から改善。食品からの摂取が中心であるため、習慣食品の継続が肝要。",
       "sources": [
         { "productId": "dhc-multi-mineral", "amount": 250 },
         { "productId": "cheese", "amount": 108 },
@@ -482,7 +482,7 @@
       "status": "caution",
       "purpose": "エネルギー代謝、筋肉の弛緩、神経の安定、骨の形成",
       "notes": "推奨量に対して不足気味だが、食事全体からの摂取を含めるともう少し上積みがある。足のつりや筋肉の緊張が気になる場合は注意。",
-      "comment": "スゴイダイズと黒すりごまの反映・追加で改善するも、推奨量にやや届かず注意域。納豆、全粒粉パン、その他の食事からの寄与を含めても、余裕のある栄養素ではない。",
+      "comment": "スゴイダイズと黒すりごまの反映・追加で、推奨量にやや届かず注意域。納豆、全粒粉パン、その他の食事からの寄与を含めても、余裕のある栄養素ではない。",
       "sources": [
         { "productId": "dhc-multi-mineral", "amount": 125 },
         { "productId": "almond", "amount": 40 },
