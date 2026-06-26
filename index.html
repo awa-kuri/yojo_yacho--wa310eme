@@ -120,11 +120,12 @@ header h1,header .reading,header .subtitle{position:relative;z-index:1;}
 
 /* ---- 上に戻る（ライチョウ） ---- */
 #to-top{
-  position:fixed;right:10px;bottom:0px;
+  position:fixed;right:10px;bottom:calc(4px + env(safe-area-inset-bottom));
   z-index:60;
   appearance:none;border:none;background:none;cursor:pointer;
   width:100px;height:78px;padding:0;
 }
+
 #to-top img{
   width:100%;height:auto;display:block;
   filter:drop-shadow(-1px 3px 4px rgba(58,54,50,.3));
