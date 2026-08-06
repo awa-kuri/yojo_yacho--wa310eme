@@ -1,0 +1,765 @@
+{
+  "meta": {
+    "appName": "養生野帳",
+    "appNameReading": "ようじょうやちょう",
+    "dataVersion": "3.0",
+    "createdDate": "2026-06-25",
+    "lastUpdated": "2026-08-06",
+    "dataSource": "サプリメント・栄養素一覧.md + 食材栄養成分表示（実測値）",
+    "note": "SUNSTYLEのビタミンB群は総摂取量からの逆算による概算値。オーツ日/パン日で朝食構成が異なるため、栄養素合計はオーツ日基準で算出し、パン日との差分を備考に記載。"
+  },
+
+  "products": [
+    {
+      "id": "dhc-b-mix",
+      "name": "DHC ビタミンBミックス",
+      "category": "supplement",
+      "frequency": "daily",
+      "dailyDose": "2粒（朝食後）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "vitamin-b1", "amount": 40, "unit": "mg" },
+        { "nutrientId": "vitamin-b2", "amount": 30, "unit": "mg" },
+        { "nutrientId": "vitamin-b6", "amount": 30, "unit": "mg" },
+        { "nutrientId": "vitamin-b12", "amount": 20, "unit": "μg" },
+        { "nutrientId": "niacin", "amount": 40, "unit": "mg" },
+        { "nutrientId": "pantothenic-acid", "amount": 40, "unit": "mg" },
+        { "nutrientId": "biotin", "amount": 50, "unit": "μg" },
+        { "nutrientId": "folic-acid", "amount": 200, "unit": "μg" },
+        { "nutrientId": "inositol", "amount": 50, "unit": "mg" }
+      ],
+      "comment": "B群の主力供給源。水溶性ビタミンであるから、過剰分は排出される。毎朝の服用を怠らぬこと。"
+    },
+    {
+      "id": "dhc-multi-mineral",
+      "name": "DHC マルチミネラル",
+      "category": "supplement",
+      "frequency": "daily",
+      "dailyDose": "3粒（夕食後）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "calcium", "amount": 250, "unit": "mg" },
+        { "nutrientId": "magnesium", "amount": 125, "unit": "mg" },
+        { "nutrientId": "iron", "amount": 7.5, "unit": "mg" },
+        { "nutrientId": "zinc", "amount": 6.0, "unit": "mg" },
+        { "nutrientId": "copper", "amount": 0.6, "unit": "mg" },
+        { "nutrientId": "manganese", "amount": 1.5, "unit": "mg" }
+      ],
+      "comment": "亜鉛・銅・鉄のバランスが整っている。単体サプリで崩すより、このまま維持するのが賢明。"
+    },
+    {
+      "id": "dear-natura-dha",
+      "name": "ディアナチュラ DHA+イチョウ葉",
+      "category": "supplement",
+      "frequency": "daily",
+      "dailyDose": "4粒（夕食後）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "dha", "amount": 500, "unit": "mg" },
+        { "nutrientId": "epa", "amount": 65, "unit": "mg" }
+      ],
+      "comment": "DHA・EPAは脳機能と抗炎症に寄与する。イチョウ葉エキス末12mgも含む。"
+    },
+    {
+      "id": "hythiol",
+      "name": "ハイチオールCプラスEX",
+      "category": "supplement",
+      "frequency": "daily",
+      "dailyDose": "2錠×2回（朝食後・夕食後）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "l-cysteine", "amount": 240, "unit": "mg" },
+        { "nutrientId": "vitamin-c", "amount": 500, "unit": "mg" },
+        { "nutrientId": "pantothenic-acid", "amount": 30, "unit": "mg" }
+      ],
+      "comment": "しみ対策に加え、L-システインは髪のケラチン原料でもある。2026年6月に再開。二つの目的を一度に担う。"
+    },
+    {
+      "id": "dhc-heme-iron",
+      "name": "DHC ヘム鉄",
+      "category": "supplement",
+      "frequency": "daily",
+      "dailyDose": "2錠（昼食後）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "iron", "amount": 10.0, "unit": "mg" },
+        { "nutrientId": "folic-acid", "amount": 75, "unit": "μg" },
+        { "nutrientId": "vitamin-b12", "amount": 1, "unit": "μg" }
+      ],
+      "comment": "2026年6月20日より追加。鉄の長期枯渇補填のため、当面は多めに摂取。フェリチン検査未実施。"
+    },
+    {
+      "id": "sunstyle",
+      "name": "SUNSTYLE PREMIUMソイプロテイン",
+      "category": "protein",
+      "frequency": "daily",
+      "dailyDose": "21g×2回（昼食＋運動後）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 35, "unit": "g", "note": "17.5g/回×2" },
+        { "nutrientId": "vitamin-c", "amount": 198, "unit": "mg", "note": "99mg/回×2" },
+        { "nutrientId": "vitamin-d", "amount": 8.6, "unit": "μg", "note": "4.3μg/回×2" },
+        { "nutrientId": "vitamin-e", "amount": 9.0, "unit": "mg", "note": "4.5mg/回×2" },
+        { "nutrientId": "vitamin-a", "amount": 1020, "unit": "μg", "note": "510μg/回×2" },
+        { "nutrientId": "vitamin-b1", "amount": 1.0, "unit": "mg", "note": "概算" },
+        { "nutrientId": "vitamin-b2", "amount": 1.4, "unit": "mg", "note": "概算" },
+        { "nutrientId": "vitamin-b6", "amount": 1.0, "unit": "mg", "note": "概算" },
+        { "nutrientId": "vitamin-b12", "amount": 2.2, "unit": "μg", "note": "概算" },
+        { "nutrientId": "niacin", "amount": 18.0, "unit": "mg", "note": "概算" },
+        { "nutrientId": "folic-acid", "amount": 180, "unit": "μg", "note": "概算" },
+        { "nutrientId": "pantothenic-acid", "amount": 4.6, "unit": "mg", "note": "概算" }
+      ],
+      "comment": "栄養バランスの要。1日2回の運用でビタミンDが推奨量に到達する。注意せよ。"
+    },
+    {
+      "id": "cocoa",
+      "name": "純ココアパウダー",
+      "category": "protein",
+      "frequency": "daily",
+      "dailyDose": "約5g（昼食プロテイン or オーツに混合）",
+      "rawPer100g": { "kcal": 421, "protein": 23.1, "fat": 24.0, "carb": 42.0 },
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 1.2, "unit": "g", "note": "5gあたり" },
+        { "nutrientId": "iron", "amount": 0.7, "unit": "mg" },
+        { "nutrientId": "magnesium", "amount": 22, "unit": "mg", "note": "一般値440mg/100g×5g" }
+      ],
+      "comment": "味の調整役だが、鉄とマグネシウムも寄与している。テオブロミンによる穏やかな覚醒作用もある。たんぱく質も1.2g/5gと、見かけによらず含んでいる。"
+    },
+    {
+      "id": "skim-milk",
+      "name": "よつ葉 脱脂粉乳（スキムミルク）",
+      "category": "protein",
+      "frequency": "weekday",
+      "dailyDose": "約15g（昼食プロテインに混合）",
+      "rawPer100g": { "kcal": 356, "protein": 35.6, "fat": 0.7, "carb": 51.8 },
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 5.3, "unit": "g" },
+        { "nutrientId": "calcium", "amount": 180, "unit": "mg", "note": "1200mg/100g×15g" }
+      ],
+      "comment": "昼のプロテインドリンクのベース。よつ葉に切替後、カルシウムが80mg→180mgに大幅増強。静かだが確かな底上げ。"
+    },
+    {
+      "id": "milk-ajiwai",
+      "name": "森永 あじわい便り（乳飲料）",
+      "category": "protein",
+      "frequency": "daily",
+      "dailyDose": "250ml（運動後プロテイン）＋60ml（オーツの日）",
+      "rawPer100g": { "kcal": 85, "protein": 5.1, "fat": 2.6, "carb": 10.3, "calcium_mg": 188 },
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 12.8, "unit": "g", "note": "250mlあたり。オーツ日は+3.1gで計15.9g" },
+        { "nutrientId": "calcium", "amount": 470, "unit": "mg", "note": "250mlあたり。オーツ日は+113mgで計583mg" }
+      ],
+      "comment": "乳飲料だが、たんぱく質5.1g/100mlは通常の牛乳(3.3g)より高く、カルシウム188mg/100mlも強化されている。v2.0まで未計上であったが、実際にはカルシウムの最大供給源。糖質10.3g/100mlはやや高め（乳糖+甘味料か）。"
+    },
+    {
+      "id": "boiled-egg",
+      "name": "ゆで卵",
+      "category": "food",
+      "frequency": "daily",
+      "dailyDose": "1個（朝食）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 6.5, "unit": "g" },
+        { "nutrientId": "iron", "amount": 1.0, "unit": "mg" },
+        { "nutrientId": "zinc", "amount": 0.8, "unit": "mg" },
+        { "nutrientId": "vitamin-d", "amount": 1.8, "unit": "μg" }
+      ],
+      "comment": "朝食の定番。たんぱく質、鉄、亜鉛、ビタミンDを一個でまかなう、堅実な一品。"
+    },
+    {
+      "id": "milkdaizu",
+      "name": "スゴイダイズ",
+      "category": "food",
+      "frequency": "daily",
+      "dailyDose": "200ml（朝食）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 6.2, "unit": "g" },
+        { "nutrientId": "calcium", "amount": 240, "unit": "mg" },
+        { "nutrientId": "vitamin-d", "amount": 3.0, "unit": "μg" },
+        { "nutrientId": "magnesium", "amount": 39.6, "unit": "mg", "note": "概算" },
+        { "nutrientId": "iron", "amount": 0.8, "unit": "mg", "note": "概算" }
+      ],
+      "comment": "カルシウムとビタミンDを加えたまるごと大豆飲料。栄養機能食品（ビタミンD）。大豆イソフラボンや食物繊維も豊富。"
+    },
+    {
+      "id": "natto",
+      "name": "納豆",
+      "category": "food",
+      "frequency": "daily",
+      "dailyDose": "1パック40g（夕食）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 6.5, "unit": "g" },
+        { "nutrientId": "iron", "amount": 1.5, "unit": "mg" },
+        { "nutrientId": "zinc", "amount": 0.9, "unit": "mg" }
+      ],
+      "comment": "たんぱく質、鉄、亜鉛、ビタミンK、食物繊維。小さな一パックに多くを背負っている、働き者である。"
+    },
+    {
+      "id": "goma",
+      "name": "黒すりごま",
+      "category": "food",
+      "frequency": "daily",
+      "dailyDose": "大さじ1/約9g（朝食）",
+      "rawPer100g": { "kcal": 599, "protein": 20.3, "fat": 54.2, "carb": 18.5 },
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 1.8, "unit": "g" },
+        { "nutrientId": "calcium", "amount": 108, "unit": "mg" },
+        { "nutrientId": "magnesium", "amount": 32, "unit": "mg" },
+        { "nutrientId": "iron", "amount": 0.9, "unit": "mg" }
+      ],
+      "comment": "大さじ1杯でカルシウム、マグネシウム、鉄を万遍なく上積みする。サプリの隙間を埋める貴重な補給兵。オーツに混ぜてもパンに振りかけてもよい。"
+    },
+    {
+      "id": "almond",
+      "name": "アーモンド",
+      "category": "food",
+      "frequency": "daily",
+      "dailyDose": "約5粒（補食）",
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "vitamin-e", "amount": 4.0, "unit": "mg", "note": "概算" },
+        { "nutrientId": "magnesium", "amount": 40, "unit": "mg", "note": "概算" }
+      ],
+      "comment": "ビタミンE、マグネシウム、食物繊維。間食としては理想的な組み合わせ。"
+    },
+    {
+      "id": "oatmeal",
+      "name": "オートミール（富澤）",
+      "category": "food-breakfast",
+      "frequency": "oats-day",
+      "dailyDose": "30g（オーバーナイトオーツ）",
+      "rawPer100g": { "kcal": 380, "protein": 13.7, "fat": 5.7, "carb": 69.1 },
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 4.1, "unit": "g" },
+        { "nutrientId": "iron", "amount": 1.2, "unit": "mg", "note": "一般値3.9mg/100g" },
+        { "nutrientId": "magnesium", "amount": 30, "unit": "mg", "note": "一般値100mg/100g" },
+        { "nutrientId": "zinc", "amount": 0.6, "unit": "mg", "note": "一般値2.1mg/100g" }
+      ],
+      "comment": "β-グルカン（水溶性食物繊維）が主力。血糖の上昇を緩やかにし、腸内環境を整える。鉄とマグネシウムの底上げにも寄与。パンの代わりに朝食の土台を担う。"
+    },
+    {
+      "id": "chia-seed",
+      "name": "ホワイトチアシード（富澤）",
+      "category": "food-breakfast",
+      "frequency": "oats-day",
+      "dailyDose": "小さじ1/2・約2.5g（オーバーナイトオーツ）",
+      "rawPer100g": { "kcal": 449, "protein": 23.6, "fat": 31.3, "carb": 33.7 },
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 0.6, "unit": "g" },
+        { "nutrientId": "calcium", "amount": 16, "unit": "mg", "note": "一般値631mg/100g" },
+        { "nutrientId": "magnesium", "amount": 8, "unit": "mg", "note": "一般値335mg/100g" },
+        { "nutrientId": "iron", "amount": 0.2, "unit": "mg", "note": "一般値7.7mg/100g" }
+      ],
+      "comment": "少量で栄養密度が極めて高い。水分を吸収してゲルを形成し、オーツのとろみと腹持ちの良さを生む立役者。オメガ3（ALA）約0.5g/2.5gも含む。量を増やせばマグネシウムの底上げに効くが、食物繊維過多によるガスに注意。"
+    },
+    {
+      "id": "blueberry-frozen",
+      "name": "冷凍ブルーベリー（ニチレイ）",
+      "category": "food-breakfast",
+      "frequency": "oats-day",
+      "dailyDose": "20g（オーバーナイトオーツ）",
+      "rawPer100g": { "kcal": 72, "protein": 0.6, "fat": 0.0, "carb": 16.9 },
+      "illustration": null,
+      "nutrients": [],
+      "comment": "栄養成分としてはアントシアニン（抗酸化）が主目的。数値で追跡するものは少ないが、色と風味でオーツを食べる楽しみを担っている。稜線の果実のようなもの。"
+    },
+    {
+      "id": "yogurt-oats",
+      "name": "ヨーグルト（プレーン脂肪0）",
+      "category": "food-breakfast",
+      "frequency": "oats-day",
+      "dailyDose": "30g（オーバーナイトオーツ）",
+      "rawPer100g": { "kcal": 46, "protein": 3.9, "fat": 0.0, "carb": 7.0, "calcium_mg": 140 },
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 1.2, "unit": "g" },
+        { "nutrientId": "calcium", "amount": 42, "unit": "mg" }
+      ],
+      "comment": "オーツに混ぜる分。乳酸菌とカルシウムの供給源。ブランドは問わず、脂肪0のプレーンであれば十分。補食のヨーグルト（LG21等）とは別枠。"
+    },
+    {
+      "id": "beet-oligo",
+      "name": "ビートオリゴ",
+      "category": "food-breakfast",
+      "frequency": "oats-day",
+      "dailyDose": "小さじ1/2・約2.5g（オーバーナイトオーツ）",
+      "rawPer100g": { "kcal": 295, "protein": 0, "fat": 0, "carb": 78 },
+      "illustration": null,
+      "nutrients": [],
+      "comment": "ラフィノース（天然オリゴ糖）を含むプレバイオティクス。ビフィズス菌の餌となり、腸内環境を地中から耕す。栄養素として追跡するものはないが、腸の状態が全ての吸収効率に影響する以上、縁の下の力持ちである。"
+    },
+    {
+      "id": "whole-wheat-bread",
+      "name": "Pasco 麦のめぐみ 全粒粉入り食パン",
+      "category": "food-breakfast",
+      "frequency": "bread-day",
+      "dailyDose": "5枚切り1枚（朝食・パンの日）",
+      "rawPerServing": { "kcal": 185, "protein": 6.9, "fat": 3.6, "carb": 33.8, "fiber": 4.9 },
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 6.9, "unit": "g" },
+        { "nutrientId": "iron", "amount": 0.8, "unit": "mg" }
+      ],
+      "comment": "鉄と不溶性食物繊維4.9gの地味な供給源。オーツを食べない日の朝食の土台。糖質28.9gだが食物繊維が緩衝材になり、スパイクは穏やか。"
+    },
+    {
+      "id": "cheese",
+      "name": "QBB 大きいとろけるスライス",
+      "category": "food-breakfast",
+      "frequency": "bread-day",
+      "dailyDose": "1枚18g（朝食・パンの日）",
+      "rawPerServing": { "kcal": 59, "protein": 3.7, "fat": 4.8, "carb": 0.3 },
+      "illustration": null,
+      "nutrients": [
+        { "nutrientId": "protein", "amount": 3.7, "unit": "g" },
+        { "nutrientId": "calcium", "amount": 108, "unit": "mg" }
+      ],
+      "comment": "カルシウムとたんぱく質の補助。パンの日にのみ登板。オーツ日はヨーグルトと牛乳がこの役を引き継いでいる。"
+    }
+  ],
+
+  "nutrients": [
+    {
+      "id": "vitamin-b1",
+      "name": "ビタミンB1",
+      "rda": 1.1,
+      "unit": "mg",
+      "currentIntake": 41.1,
+      "status": "sufficient",
+      "purpose": "糖質の代謝に必須。エネルギー産生、神経機能の維持",
+      "notes": null,
+      "comment": "DHCビタミンBミックスが主力。大幅に充足しているが、水溶性のため過剰の心配はない。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 40 },
+        { "productId": "sunstyle", "amount": 1.0 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "vitamin-b2",
+      "name": "ビタミンB2",
+      "rda": 1.2,
+      "unit": "mg",
+      "currentIntake": 31.6,
+      "status": "sufficient",
+      "purpose": "脂質の代謝、皮膚・粘膜の健康維持",
+      "notes": null,
+      "comment": "十分。皮膚のターンオーバーにも関与しており、L-システインとの相乗効果がある。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 30 },
+        { "productId": "sunstyle", "amount": 1.4 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "vitamin-b6",
+      "name": "ビタミンB6",
+      "rda": 1.1,
+      "unit": "mg",
+      "currentIntake": 31.2,
+      "status": "sufficient",
+      "purpose": "たんぱく質の代謝、神経伝達物質の合成",
+      "notes": null,
+      "comment": "十分。たんぱく質摂取量が多いほど需要が増えるが、現在の摂取量なら問題ない。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 30 },
+        { "productId": "sunstyle", "amount": 1.0 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "vitamin-b12",
+      "name": "ビタミンB12",
+      "rda": 2.4,
+      "unit": "μg",
+      "currentIntake": 22.7,
+      "status": "sufficient",
+      "purpose": "赤血球の形成、神経機能の維持、葉酸との協働",
+      "notes": null,
+      "comment": "十分。動物性食品に多い栄養素だが、サプリで十分量を確保している。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 20 },
+        { "productId": "dhc-heme-iron", "amount": 1 },
+        { "productId": "sunstyle", "amount": 2.2 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "vitamin-c",
+      "name": "ビタミンC",
+      "rda": 100,
+      "unit": "mg",
+      "currentIntake": 700,
+      "status": "sufficient",
+      "purpose": "鉄の吸収促進、コラーゲン合成、抗酸化",
+      "notes": null,
+      "comment": "ハイチオール500mg＋SUNSTYLE198mgで大幅に充足。鉄の吸収を助ける重要な役割を担っている。",
+      "sources": [
+        { "productId": "hythiol", "amount": 500 },
+        { "productId": "sunstyle", "amount": 198 }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "vitamin-d",
+      "name": "ビタミンD",
+      "rda": 8.5,
+      "unit": "μg",
+      "currentIntake": 13.4,
+      "status": "adequate",
+      "purpose": "毛包の成長サイクルに関与、カルシウム吸収の促進、免疫機能",
+      "notes": "SUNSTYLE×2で8.6μg＋スゴイダイズ3μg＋ゆで卵1.8μg。追加不要。血液検査（25-OH）未実施。",
+      "comment": "SUNSTYLE2回の運用が生命線。1回の日は意識して日光を浴びるか、他の供給源を検討せよ。",
+      "sources": [
+        { "productId": "sunstyle", "amount": 8.6 },
+        { "productId": "boiled-egg", "amount": 1.8 },
+        { "productId": "milkdaizu", "amount": 3.0 }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "vitamin-e",
+      "name": "ビタミンE",
+      "rda": 5.0,
+      "unit": "mg",
+      "currentIntake": 13.0,
+      "status": "sufficient",
+      "purpose": "抗酸化作用、血行促進、細胞膜の保護",
+      "notes": null,
+      "comment": "SUNSTYLE9mg＋アーモンド4mgで十分。抗酸化と血行促進──地味だが身体の修復を下支えしている。",
+      "sources": [
+        { "productId": "sunstyle", "amount": 9.0 },
+        { "productId": "almond", "amount": 4.0 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "vitamin-a",
+      "name": "ビタミンA",
+      "rda": 650,
+      "unit": "μg",
+      "currentIntake": 1020,
+      "status": "sufficient",
+      "purpose": "皮膚・粘膜の健康、視覚機能、免疫機能",
+      "notes": "脂溶性ビタミンのため過剰摂取に注意が必要だが、SUNSTYLEの量であれば耐容上限量（2700μg）の範囲内。",
+      "comment": "SUNSTYLEのみで推奨量を超えている。追加は不要。",
+      "sources": [
+        { "productId": "sunstyle", "amount": 1020 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "folic-acid",
+      "name": "葉酸",
+      "rda": 240,
+      "unit": "μg",
+      "currentIntake": 391,
+      "status": "sufficient",
+      "purpose": "細胞分裂・DNA合成に必須。赤血球の形成",
+      "notes": null,
+      "comment": "十分。DHCビタミンBミックスとSUNSTYLEの合算で推奨量を大きく超えている。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 200 },
+        { "productId": "dhc-heme-iron", "amount": 75 },
+        { "productId": "sunstyle", "amount": 180 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "biotin",
+      "name": "ビオチン",
+      "rda": 50,
+      "unit": "μg",
+      "currentIntake": 50,
+      "status": "adequate",
+      "purpose": "毛髪・皮膚・爪の健康維持、糖質・脂質・たんぱく質の代謝",
+      "notes": null,
+      "comment": "推奨量ちょうど。余裕がないが、腸内細菌も一部合成するため、実質的には問題ない。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 50 }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "pantothenic-acid",
+      "name": "パントテン酸",
+      "rda": 5,
+      "unit": "mg",
+      "currentIntake": 74.6,
+      "status": "sufficient",
+      "purpose": "エネルギー代謝、ホルモン合成、皮膚・粘膜の健康",
+      "notes": "過剰気味だが水溶性のため排出される。問題なし。",
+      "comment": "三つの供給源（DHC 40mg＋ハイチオール30mg＋SUNSTYLE 4.6mg）が重なり、推奨量の約15倍。害はない。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 40 },
+        { "productId": "hythiol", "amount": 30 },
+        { "productId": "sunstyle", "amount": 4.6 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "niacin",
+      "name": "ナイアシン",
+      "rda": 11,
+      "unit": "mg",
+      "currentIntake": 59,
+      "status": "sufficient",
+      "purpose": "エネルギー代謝、皮膚の健康、神経機能",
+      "notes": null,
+      "comment": "十分。DHCビタミンBミックスが主力。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 40 },
+        { "productId": "sunstyle", "amount": 18 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "iron",
+      "name": "鉄",
+      "rda": 10.5,
+      "unit": "mg",
+      "currentIntake": 24.0,
+      "status": "adequate",
+      "purpose": "毛母細胞への酸素供給、赤血球の形成、貧血予防",
+      "notes": "ビタミンC（500mg摂取中）が非ヘム鉄の吸収を促進。フェリチン検査未実施──貯蔵量の実態は不明。",
+      "comment": "オーツ日はパン日より鉄が+0.6mg。鉄の長期枯渇補填のため当面多めに摂取（上限40mg以内）。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 7.5 },
+        { "productId": "dhc-heme-iron", "amount": 10.0 },
+        { "productId": "natto", "amount": 1.5 },
+        { "productId": "boiled-egg", "amount": 1.0 },
+        { "productId": "oatmeal", "amount": 1.2, "note": "オーツ日" },
+        { "productId": "cocoa", "amount": 0.7 },
+        { "productId": "milkdaizu", "amount": 0.8 },
+        { "productId": "goma", "amount": 0.9 },
+        { "productId": "chia-seed", "amount": 0.2, "note": "オーツ日" }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "zinc",
+      "name": "亜鉛",
+      "rda": 8,
+      "unit": "mg",
+      "currentIntake": 8.3,
+      "status": "adequate",
+      "purpose": "ケラチン合成に直接関与、免疫機能、味覚の維持",
+      "notes": "亜鉛を単体で追加すると銅の吸収を阻害する。マルチミネラルに銅0.6mgが含まれており、現状のバランスを崩さない方がよい。血液検査未実施。",
+      "comment": "オーツの寄与（+0.6mg）で推奨量に到達。銅とのバランスが重要であるため、安易に追加しないこと。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 6.0 },
+        { "productId": "natto", "amount": 0.9 },
+        { "productId": "boiled-egg", "amount": 0.8 },
+        { "productId": "oatmeal", "amount": 0.6, "note": "オーツ日" }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "calcium",
+      "name": "カルシウム",
+      "rda": 650,
+      "unit": "mg",
+      "currentIntake": 1387,
+      "status": "sufficient",
+      "purpose": "骨・歯の形成、筋肉の収縮、神経伝達",
+      "notes": "v2.0では運動後のあじわい便り250mlが未計上であった。加算により大幅増。耐容上限量2500mg以内であり問題ない。",
+      "comment": "あじわい便りの計上により、推奨量の2倍を超えた。カルシウムはもはや懸念事項ではない。スキムミルクのよつ葉切替（80→180mg）も大きい。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 250 },
+        { "productId": "milk-ajiwai", "amount": 470, "note": "運動後250ml" },
+        { "productId": "milkdaizu", "amount": 240 },
+        { "productId": "skim-milk", "amount": 180, "note": "よつ葉切替で増" },
+        { "productId": "goma", "amount": 108 },
+        { "productId": "milk-ajiwai", "amount": 113, "note": "オーツ日60ml" },
+        { "productId": "yogurt-oats", "amount": 42, "note": "オーツ日" },
+        { "productId": "chia-seed", "amount": 16, "note": "オーツ日" }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "magnesium",
+      "name": "マグネシウム",
+      "rda": 270,
+      "unit": "mg",
+      "currentIntake": 297,
+      "status": "adequate",
+      "purpose": "エネルギー代謝、筋肉の弛緩、神経の安定、骨の形成",
+      "notes": "オーツ＋チアシード＋ココアの追加で、推奨量に到達。パン日は-60mgほど低下するが、食事からの寄与で補える範囲。",
+      "comment": "長らく注意域であったが、オーツ朝食の導入で推奨量を超えた。チアシードの増量でさらに積める余地あり。ただしガスとの兼ね合い。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 125 },
+        { "productId": "almond", "amount": 40 },
+        { "productId": "milkdaizu", "amount": 39.6 },
+        { "productId": "goma", "amount": 32 },
+        { "productId": "oatmeal", "amount": 30, "note": "オーツ日" },
+        { "productId": "cocoa", "amount": 22 },
+        { "productId": "chia-seed", "amount": 8, "note": "オーツ日" }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "copper",
+      "name": "銅",
+      "rda": 0.7,
+      "unit": "mg",
+      "currentIntake": 0.6,
+      "status": "caution",
+      "purpose": "鉄の利用促進、メラニン色素の合成、抗酸化酵素の構成成分",
+      "notes": "亜鉛との拮抗関係がある。亜鉛を単体で増やすと銅の吸収が阻害される。現在のマルチミネラルの配合バランスが重要。",
+      "comment": "マルチミネラルの0.6mgのみ。推奨量にわずかに足りないが、食事からの寄与を含めれば到達する。亜鉛との均衡を崩さぬことが肝要。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 0.6 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "manganese",
+      "name": "マンガン",
+      "rda": 3.5,
+      "unit": "mg",
+      "currentIntake": 1.5,
+      "status": "caution",
+      "purpose": "骨の形成、糖質・脂質の代謝、抗酸化酵素の構成成分",
+      "notes": "マルチミネラルからの1.5mgのみだが、穀類や豆類からの食事摂取を含めればおおむね到達する。",
+      "comment": "食事からの寄与が大きい栄養素。サプリだけでは不足に見えるが、納豆、全粒粉パン、オーツなどから補われている。",
+      "sources": [
+        { "productId": "dhc-multi-mineral", "amount": 1.5 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "protein",
+      "name": "たんぱく質",
+      "rda": 50,
+      "unit": "g",
+      "currentIntake": 81.4,
+      "status": "sufficient",
+      "purpose": "髪の主成分ケラチンの原料、筋肉の維持・修復、全身の組織構成",
+      "notes": "v2.0では運動後のあじわい便り250mlのたんぱく質（12.8g）が未計上であった。加算により大幅増。オーツ日基準。",
+      "comment": "朝食（オーツ日）約26g＋昼食24g＋運動後30g＋夕食（納豆6.5g＋その他）。一日を通して分散摂取できている。",
+      "sources": [
+        { "productId": "sunstyle", "amount": 35 },
+        { "productId": "milk-ajiwai", "amount": 12.8, "note": "運動後250ml" },
+        { "productId": "boiled-egg", "amount": 6.5 },
+        { "productId": "milkdaizu", "amount": 6.2 },
+        { "productId": "natto", "amount": 6.5 },
+        { "productId": "skim-milk", "amount": 5.3, "note": "平日昼" },
+        { "productId": "oatmeal", "amount": 4.1, "note": "オーツ日" },
+        { "productId": "goma", "amount": 1.8 },
+        { "productId": "milk-ajiwai", "amount": 3.1, "note": "オーツ日60ml" },
+        { "productId": "cocoa", "amount": 1.2 },
+        { "productId": "yogurt-oats", "amount": 1.2, "note": "オーツ日" },
+        { "productId": "chia-seed", "amount": 0.6, "note": "オーツ日" }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "inositol",
+      "name": "イノシトール",
+      "rda": null,
+      "unit": "mg",
+      "currentIntake": 50,
+      "status": "supplemented",
+      "purpose": "脂質代謝、細胞膜の構成、神経機能の補助",
+      "notes": "ビタミン様物質。推奨量は設定されていないが、B群と協働して代謝を支える。",
+      "comment": "DHCビタミンBミックスの付随成分。主役ではないが、B群の補佐として静かに働いている。",
+      "sources": [
+        { "productId": "dhc-b-mix", "amount": 50 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "l-cysteine",
+      "name": "L-システイン",
+      "rda": null,
+      "unit": "mg",
+      "currentIntake": 240,
+      "status": "supplemented",
+      "purpose": "ケラチンの原料、肌のターンオーバー促進、メラニン排出",
+      "notes": "必須アミノ酸ではないが、髪と肌の修復に重要。標準的な推奨量は設定されていない。",
+      "comment": "ハイチオールCプラスEXで240mg。しみ対策と髪の回復を同時に担う、今の布陣の要。",
+      "sources": [
+        { "productId": "hythiol", "amount": 240 }
+      ],
+      "hairRelated": true
+    },
+    {
+      "id": "dha",
+      "name": "DHA",
+      "rda": null,
+      "unit": "mg",
+      "currentIntake": 500,
+      "status": "supplemented",
+      "purpose": "脳機能の維持、抗炎症作用、血中脂質の改善",
+      "notes": "DHA＋EPAの合計で1日1000mg以上が目安とされることもあるが、明確な推奨量はない。",
+      "comment": "ディアナチュラで500mg。EPAと合わせて565mg。魚をあまり食べない食生活を補っている。",
+      "sources": [
+        { "productId": "dear-natura-dha", "amount": 500 }
+      ],
+      "hairRelated": false
+    },
+    {
+      "id": "epa",
+      "name": "EPA",
+      "rda": null,
+      "unit": "mg",
+      "currentIntake": 65,
+      "status": "supplemented",
+      "purpose": "抗炎症作用、血液凝固の抑制、血中中性脂肪の低下",
+      "notes": null,
+      "comment": "DHAの陰に隠れがちだが、炎症を抑える力はEPAの方が強い。65mgは少なめだが、DHAと合わせて機能する。",
+      "sources": [
+        { "productId": "dear-natura-dha", "amount": 65 }
+      ],
+      "hairRelated": false
+    }
+  ],
+
+  "categories": {
+    "supplement": { "label": "サプリメント", "order": 1 },
+    "protein": { "label": "プロテイン・ドリンク", "order": 2 },
+    "food": { "label": "習慣食品（毎日）", "order": 3 },
+    "food-breakfast": { "label": "朝食材料（選択式）", "order": 4 }
+  },
+
+  "frequencyLabels": {
+    "daily": "◎ 毎日",
+    "weekday": "◎ 平日",
+    "oats-day": "○ オーツの日",
+    "bread-day": "○ パンの日"
+  },
+
+  "statusLabels": {
+    "sufficient": { "label": "◎ 十分", "description": "推奨量の150%以上" },
+    "adequate": { "label": "○ 到達", "description": "推奨量の80〜150%" },
+    "caution": { "label": "△ 注意", "description": "推奨量の60〜80%、または食事からの上積みで到達" },
+    "insufficient": { "label": "× 不足", "description": "推奨量の60%未満" },
+    "supplemented": { "label": "─ 補充中", "description": "推奨量の設定なし。サプリで摂取中" }
+  },
+
+  "illustrations": {
+    "header": "raicho.png",
+    "hairSection": "okojo.png",
+    "productTab": "hoshigarasu.png",
+    "nutrientTab": "iwabenkei.png",
+    "sufficient": "chinguruma_hana.png",
+    "footer": "haimatsu.png",
+    "decorative": "chinguruma_watage.png",
+    "aboutPage": "landscape.png"
+  },
+
+  "aboutPage": {
+    "title": "記録者の覚書",
+    "illustration": "landscape.png",
+    "body": "この野帳は、ある旅の途中で編まれたものである。\n\n旅人は、自らの身体が消耗していることに気づいた。髪が痩せ、肩が軋み、脚が重い。長い間、身体が発する信号を聞き流していた。あるいは、聞こえていても、手当ての仕方を知らなかった。\n\nそこで、一つずつ調べ始めた。何を摂り、何が足り、何が足りないのか。どの石の下にどの草が生え、どの草がどの不調に効くのか。高山の植物が厳しい環境で生き延びるために、限られた水と光を無駄なく使うように──この身体もまた、入ってくるものを正しく配れば、自ずと立て直していくはずであると。\n\n記録は、二つの方向から引けるようにした。品目から栄養素を、栄養素から品目を。旅の途中でふと「これは何のために飲んでいるのだったか」と思った時に、立ち止まらずに済むように。\n\nイワベンケイは岩の割れ目に水を溜める。チングルマは綿毛が飛べる形になるまで待つ。ライチョウは季節ごとに羽を換える。どれも、生き延びるための知恵を、地味な反復の中に持っている。\n\nこの野帳も、そういうものでありたい。派手な処方箋ではなく、毎日の小さな確認のための道具。",
+    "signature": "稜線にて　記す"
+  }
+}
