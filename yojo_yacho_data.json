@@ -85,7 +85,7 @@
       "name": "ハイチオールCプラスEX",
       "category": "supplement",
       "frequency": "daily",
-      "dailyDose": "2錠×2回（朝食後・夕食後）",
+      "dailyDose": "2錠×2回 朝食後・夕食後",
       "nutrients": [
         { "nutrientId": "l-cysteine", "amount": 240, "unit": "mg" },
         { "nutrientId": "vitamin-c", "amount": 500, "unit": "mg" },
@@ -111,7 +111,7 @@
       "name": "SUNSTYLE PREMIUMソイプロテイン",
       "category": "protein",
       "frequency": "daily",
-      "dailyDose": "21g×2回（昼食＋運動後）",
+      "dailyDose": "21g×2回 昼食＋運動後",
       "nutrients": [
         { "nutrientId": "protein", "amount": 35, "unit": "g", "note": "17.5g/回×2" },
         { "nutrientId": "vitamin-c", "amount": 198, "unit": "mg" },
@@ -133,7 +133,7 @@
       "name": "純ココアパウダー",
       "category": "protein",
       "frequency": "daily",
-      "dailyDose": "約5g（昼のプロテイン or オーツに混合）",
+      "dailyDose": "約5g 昼のプロテイン／オーツに混合",
       "nutrients": [
         { "nutrientId": "protein", "amount": 1.2, "unit": "g" },
         { "nutrientId": "iron", "amount": 0.7, "unit": "mg" },
@@ -146,7 +146,7 @@
       "name": "よつ葉 脱脂粉乳（スキムミルク）",
       "category": "protein",
       "frequency": "weekday",
-      "dailyDose": "約15g（昼のプロテインに混合）",
+      "dailyDose": "約15g 昼のプロテインに混合",
       "nutrients": [
         { "nutrientId": "protein", "amount": 5.3, "unit": "g" },
         { "nutrientId": "calcium", "amount": 180, "unit": "mg" }
@@ -158,7 +158,7 @@
       "name": "森永 あじわい便り（乳飲料）",
       "category": "protein",
       "frequency": "daily",
-      "dailyDose": "250ml（運動後）／60ml（オーツの日）",
+      "dailyDose": "250ml 運動後／60ml オーツの日",
       "nutrients": [
         { "nutrientId": "protein", "amount": 12.8, "unit": "g", "note": "運動後250ml" },
         { "nutrientId": "calcium", "amount": 470, "unit": "mg", "note": "運動後250ml" }
@@ -253,7 +253,7 @@
       "name": "ホワイトチアシード（富澤）",
       "category": "food-breakfast",
       "frequency": "oats-day",
-      "dailyDose": "小さじ1/2・約2.5g",
+      "dailyDose": "小さじ1/2（約2.5g）",
       "nutrients": [
         { "nutrientId": "protein", "amount": 0.6, "unit": "g" },
         { "nutrientId": "calcium", "amount": 16, "unit": "mg" },
@@ -288,7 +288,7 @@
       "name": "ビートオリゴ",
       "category": "food-breakfast",
       "frequency": "oats-day",
-      "dailyDose": "小さじ1/2・約2.5g",
+      "dailyDose": "小さじ1/2（約2.5g）",
       "nutrients": [],
       "comment": "ラフィノース（天然オリゴ糖）を含むプレバイオティクス。ビフィズス菌の餌となり、腸を地中から耕す。数値に現れる栄養素はないが、腸の具合が全ての吸収効率を左右する以上、縁の下の力持ちである。"
     },
