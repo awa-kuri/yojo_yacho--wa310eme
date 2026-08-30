@@ -2,16 +2,16 @@
   "meta": {
     "appName": "養生野帳",
     "appNameReading": "ようじょうやちょう",
-    "dataVersion": "3.1",
+    "dataVersion": "3.5",
     "createdDate": "2026-06-25",
-    "lastUpdated": "2026-08-07",
+    "lastUpdated": "2026-08-30",
     "dataSource": "サプリメント・栄養素一覧.md + 食材栄養成分表示（実測値）",
     "note": "朝の献立（オーツ／パン）で切り替わる。摂取量と充足状態は供給元から都度算出しているため、配合を書き換えれば数値もひとりでに動く。SUNSTYLEのビタミンB群は総摂取量からの逆算による概算値。"
   },
 
   "modeNotes": {
     "oats": "オートミールを軸に、種と実を重ねた朝。前夜の仕込みが要るが、マグネシウムと鉄がわずかに厚くなる。",
-    "bread": "全粒粉パンとチーズ、黒すりごま。支度は速く、たんぱく質もわずかに上回る。ただしマグネシウムは薄くなる。"
+    "bread": "全粒粉パンとチーズ、黒すりごま。たんぱく質がわずかに上回る。ただしマグネシウムは薄くなる。"
   },
 
   "slips": {
@@ -236,13 +236,14 @@
 
     {
       "id": "oatmeal",
-      "name": "オートミール（富澤）",
+      "name": "オートミール（スタイルワン）",
       "category": "food-breakfast",
       "frequency": "oats-day",
       "dailyDose": "30g",
       "nutrients": [
-        { "nutrientId": "protein", "amount": 4.1, "unit": "g" },
-        { "nutrientId": "iron", "amount": 1.2, "unit": "mg" },
+        { "nutrientId": "protein", "amount": 3.5, "unit": "g" },
+       { "nutrientId": "calcium", "amount": 11.4, "unit": "mg" },
+        { "nutrientId": "iron", "amount": 1.0, "unit": "mg" },
         { "nutrientId": "magnesium", "amount": 30, "unit": "mg" },
         { "nutrientId": "zinc", "amount": 0.6, "unit": "mg" }
       ],
@@ -503,7 +504,7 @@
         { "productId": "dhc-heme-iron", "amount": 10.0 },
         { "productId": "dhc-multi-mineral", "amount": 7.5 },
         { "productId": "natto", "amount": 1.5 },
-        { "productId": "oatmeal", "amount": 1.2, "mode": "oats" },
+        { "productId": "oatmeal", "amount": 1.0, "mode": "oats" },
         { "productId": "boiled-egg", "amount": 1.0 },
         { "productId": "goma", "amount": 0.9 },
         { "productId": "milkdaizu", "amount": 0.8 },
@@ -544,7 +545,8 @@
         { "productId": "skim-milk", "amount": 180 },
         { "productId": "milk-ajiwai", "amount": 113, "mode": "oats", "note": "オーツ60ml" },
         { "productId": "goma", "amount": 108 },
-        { "productId": "cheese", "amount": 108, "mode": "bread" },
+        { "productId": "cheese", "amount": 11.4, "mode": "bread" },
+        { "productId": "oatmeal", "amount": 42, "mode": "oats" },
         { "productId": "yogurt-oats", "amount": 42, "mode": "oats" },
         { "productId": "chia-seed", "amount": 16, "mode": "oats" }
       ],
@@ -613,7 +615,7 @@
         { "productId": "natto", "amount": 6.5 },
         { "productId": "milkdaizu", "amount": 6.2 },
         { "productId": "skim-milk", "amount": 5.3 },
-        { "productId": "oatmeal", "amount": 4.1, "mode": "oats" },
+        { "productId": "oatmeal", "amount": 3.5, "mode": "oats" },
         { "productId": "cheese", "amount": 3.7, "mode": "bread" },
         { "productId": "milk-ajiwai", "amount": 3.1, "mode": "oats", "note": "オーツ60ml" },
         { "productId": "goma", "amount": 1.8 },
