@@ -2,7 +2,7 @@
   "meta": {
     "appName": "養生野帳",
     "appNameReading": "ようじょうやちょう",
-    "dataVersion": "3.9",
+    "dataVersion": "3.91",
     "createdDate": "2026-06-25",
     "lastUpdated": "2026-11-15",
     "dataSource": "サプリメント・栄養素一覧.md + 食材栄養成分表示（実測値）",
@@ -482,7 +482,7 @@
       "name": "アーモンド",
       "category": "food",
       "frequency": "daily",
-      "dailyDose": "5粒・約12g（補食）",
+      "dailyDose": "5粒・約6g（補食）",
       "nutrients": [
         {
           "nutrientId": "vitamin-e",
@@ -496,12 +496,12 @@
         },
         {
           "nutrientId": "copper",
-          "amount": 0.14,
+          "amount": 0.07,
           "unit": "mg"
         },
         {
           "nutrientId": "manganese",
-          "amount": 0.29,
+          "amount": 0.14,
           "unit": "mg"
         }
       ],
@@ -1113,7 +1113,7 @@
         },
         {
           "productId": "almond",
-          "amount": 0.14
+          "amount": 0.07
         },
         {
           "productId": "oatmeal",
@@ -1148,7 +1148,7 @@
         },
         {
           "productId": "goma",
-          "amount": 0.23
+          "amount": 0.14
         }
       ],
       "hairRelated": false
